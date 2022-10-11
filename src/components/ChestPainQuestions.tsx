@@ -9,6 +9,11 @@ const ChestPainQuestions: React.FC<{}> = () => {
           <Text style={style.text}>Are you having Chest pain?</Text>
         </TouchableOpacity>
       </View>
+      <View style={style.container}>
+        <TouchableOpacity style={style.button} activeOpacity={0.7}>
+          <Text style={style.text}>Are you Nauseated?</Text>
+        </TouchableOpacity>
+      </View>
     </View>
   );
 };
