@@ -1,11 +1,23 @@
 import React from 'react';
 import {TouchableOpacity, StyleSheet, View, Text} from 'react-native';
+import SoundPlayer from 'react-native-sound-player';
 
 const ChestPainQuestions: React.FC<{}> = () => {
+  const handlePress = () => {
+    try {
+      SoundPlayer.playSoundFile('test', 'mp3');
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   return (
     <View style={style.container}>
       <View style={style.container}>
-        <TouchableOpacity style={style.button} activeOpacity={0.7}>
+        <TouchableOpacity
+          style={style.button}
+          activeOpacity={0.7}
+          onPress={() => handlePress()}>
           <Text style={style.text}>Are you having Chest pain?</Text>
         </TouchableOpacity>
       </View>
@@ -30,7 +42,7 @@ const style = StyleSheet.create({
     borderRadius: 4,
     borderWidth: 1,
     borderColor: 'green',
-    backgroundColor: 'lightgreen',
+    backgroundColor: 'lightblue',
   },
   text: {
     textAlign: 'center',
