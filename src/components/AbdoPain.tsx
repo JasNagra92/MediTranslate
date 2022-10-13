@@ -1,11 +1,11 @@
 import React, {useState} from 'react';
 import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
-import ChestPainQuestions from './ChestPainQuestions';
+import AbdoPainQuestions from './AbdoPainQuestions';
 interface Props {
   handlePress: (filename: string) => void;
 }
 
-const Chestpain: React.FC<Props> = ({handlePress}) => {
+const AbdoPain: React.FC<Props> = ({handlePress}) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   return (
@@ -14,9 +14,9 @@ const Chestpain: React.FC<Props> = ({handlePress}) => {
         style={style.button}
         onPress={() => setIsOpen(!isOpen)}
         activeOpacity={0.7}>
-        <Text style={style.text}>Chest Pain</Text>
+        <Text style={style.text}>Abdo Pain</Text>
       </TouchableOpacity>
-      {isOpen && <ChestPainQuestions handlePress={handlePress} />}
+      {isOpen && <AbdoPainQuestions handlePress={handlePress} />}
     </View>
   );
 };
@@ -36,4 +36,4 @@ const style = StyleSheet.create({
   },
 });
 
-export default Chestpain;
+export default AbdoPain;

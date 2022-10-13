@@ -22,8 +22,6 @@ export default Question;
 const style = StyleSheet.create({
   container: {
     width: '100%',
-    alignItems: 'center',
-    justifyContent: 'center',
   },
   button: {
     padding: 40,
