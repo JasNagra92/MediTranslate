@@ -7,7 +7,9 @@ interface Props {
 const Header: React.FC<Props> = ({title}) => {
   return (
     <View style={styles.header}>
-      <Text style={styles.headerText}>{title}</Text>
+      <View style={styles.titleBox}>
+        <Text style={styles.headerText}>{title}</Text>
+      </View>
     </View>
   );
 };
@@ -22,6 +24,12 @@ const styles = StyleSheet.create({
     fontSize: 20,
     fontWeight: '600',
     textAlign: 'center',
+    backgroundColor: 'lightblue',
+    borderRadius: 20,
+  },
+  titleBox: {
+    width: '50%',
+    alignSelf: 'center',
   },
 });
 

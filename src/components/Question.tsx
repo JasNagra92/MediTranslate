@@ -3,10 +3,11 @@ import {TouchableOpacity, StyleSheet, View, Text} from 'react-native';
 interface Props {
   question: string;
   filename: string;
+  phonetic: string;
   onPress: (filename: string) => void;
 }
 
-const Question: React.FC<Props> = ({question, filename, onPress}) => {
+const Question: React.FC<Props> = ({question, filename, onPress, phonetic}) => {
   return (
     <View style={style.container}>
       <TouchableOpacity
@@ -14,6 +15,7 @@ const Question: React.FC<Props> = ({question, filename, onPress}) => {
         activeOpacity={0.7}
         onPress={() => onPress(filename)}>
         <Text style={style.text}>{question}</Text>
+        <Text style={style.text2}>{phonetic}</Text>
       </TouchableOpacity>
     </View>
   );
@@ -36,5 +38,10 @@ const style = StyleSheet.create({
     fontSize: 20,
     color: 'black',
     fontWeight: '900',
+  },
+  text2: {
+    textAlign: 'center',
+    fontSize: 20,
+    color: 'black',
   },
 });

@@ -1,5 +1,11 @@
 import React, {useState} from 'react';
-import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
+import {
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
+  ScrollView,
+} from 'react-native';
 import ChestPainQuestions from './ChestPainQuestions';
 interface Props {
   handlePress: (filename: string) => void;
@@ -16,7 +22,11 @@ const Chestpain: React.FC<Props> = ({handlePress}) => {
         activeOpacity={0.7}>
         <Text style={style.text}>Chest Pain</Text>
       </TouchableOpacity>
-      {isOpen && <ChestPainQuestions handlePress={handlePress} />}
+      {isOpen && (
+        <ScrollView>
+          <ChestPainQuestions handlePress={handlePress} />
+        </ScrollView>
+      )}
     </View>
   );
 };
