@@ -4,16 +4,17 @@ interface Props {
   question: string;
   filename: string;
   phonetic: string;
-  onPress: (filename: string) => void;
 }
+import {useSound} from './hooks/useSound';
 
-const Question: React.FC<Props> = ({question, filename, onPress, phonetic}) => {
+const Question: React.FC<Props> = ({question, filename, phonetic}) => {
+  const {play} = useSound();
   return (
     <View style={style.container}>
       <TouchableOpacity
         style={style.button}
         activeOpacity={0.7}
-        onPress={() => onPress(filename)}>
+        onPress={() => play(filename)}>
         <Text style={style.text}>{question}</Text>
         <Text style={style.text2}>{phonetic}</Text>
       </TouchableOpacity>
@@ -27,7 +28,8 @@ const style = StyleSheet.create({
   },
   button: {
     padding: 40,
-    width: '100%',
+    width: '90%',
+    alignSelf: 'center',
     borderRadius: 4,
     borderWidth: 1,
     borderColor: 'green',

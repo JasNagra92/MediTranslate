@@ -7,15 +7,12 @@ import {
   ScrollView,
 } from 'react-native';
 import ChestPainQuestions from './ChestPainQuestions';
-interface Props {
-  handlePress: (filename: string) => void;
-}
 
-const Chestpain: React.FC<Props> = ({handlePress}) => {
+const Chestpain: React.FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   return (
-    <View>
+    <View style={style.container}>
       <TouchableOpacity
         style={style.button}
         onPress={() => setIsOpen(!isOpen)}
@@ -24,7 +21,7 @@ const Chestpain: React.FC<Props> = ({handlePress}) => {
       </TouchableOpacity>
       {isOpen && (
         <ScrollView>
-          <ChestPainQuestions handlePress={handlePress} />
+          <ChestPainQuestions />
         </ScrollView>
       )}
     </View>
@@ -34,7 +31,8 @@ const Chestpain: React.FC<Props> = ({handlePress}) => {
 const style = StyleSheet.create({
   button: {
     padding: 40,
-    width: '100%',
+    width: '90%',
+    alignSelf: 'center',
     borderRadius: 4,
     borderWidth: 1,
     borderColor: 'green',
@@ -43,6 +41,9 @@ const style = StyleSheet.create({
   text: {
     textAlign: 'center',
     fontSize: 30,
+  },
+  container: {
+    marginBottom: 1,
   },
 });
 

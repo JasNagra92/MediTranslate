@@ -7,11 +7,8 @@ import {
   ScrollView,
 } from 'react-native';
 import AbdoPainQuestions from './AbdoPainQuestions';
-interface Props {
-  handlePress: (filename: string) => void;
-}
 
-const AbdoPain: React.FC<Props> = ({handlePress}) => {
+const AbdoPain: React.FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   return (
@@ -24,7 +21,7 @@ const AbdoPain: React.FC<Props> = ({handlePress}) => {
       </TouchableOpacity>
       {isOpen && (
         <ScrollView>
-          <AbdoPainQuestions handlePress={handlePress} />
+          <AbdoPainQuestions />
         </ScrollView>
       )}
     </View>
@@ -34,7 +31,8 @@ const AbdoPain: React.FC<Props> = ({handlePress}) => {
 const style = StyleSheet.create({
   button: {
     padding: 40,
-    width: '100%',
+    width: '90%',
+    alignSelf: 'center',
     borderRadius: 4,
     borderWidth: 1,
     borderColor: 'green',
