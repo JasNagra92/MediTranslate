@@ -2,8 +2,13 @@ import React, {useState} from 'react';
 import {View, Image, Text, StyleSheet, TouchableOpacity} from 'react-native';
 import {Shadow} from 'react-native-shadow-2';
 import DropDownPicker from 'react-native-dropdown-picker';
+interface props {
+  navigation: {
+    navigate: (screen: string) => void;
+  };
+}
 
-const Launch: React.FC = ({navigation}) => {
+const Launch: React.FC<props> = ({navigation}) => {
   const [open, setOpen] = useState(false);
   const [value, setValue] = useState(null);
   const [items, setItems] = useState([
@@ -43,13 +48,13 @@ const style = StyleSheet.create({
   mainContainer: {
     flex: 1,
     justifyContent: 'space-between',
-    margin: 10,
-    padding: 20,
+    alignItems: 'center',
     backgroundColor: '#FFFFFF',
   },
   container: {
     flex: 0.3,
     alignSelf: 'center',
+    paddingTop: 60,
   },
   selectContainer: {
     flex: 0.3,
