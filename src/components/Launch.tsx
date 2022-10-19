@@ -3,12 +3,12 @@ import {View, Image, Text, StyleSheet, TouchableOpacity} from 'react-native';
 import {Shadow} from 'react-native-shadow-2';
 import DropDownPicker from 'react-native-dropdown-picker';
 
-const Launch: React.FC = () => {
+const Launch: React.FC = ({navigation}) => {
   const [open, setOpen] = useState(false);
   const [value, setValue] = useState(null);
   const [items, setItems] = useState([
-    {label: 'Apple', value: 'apple'},
-    {label: 'Banana', value: 'banana'},
+    {label: 'Punjabi', value: 'Punjabi'},
+    {label: 'Mandarin', value: 'Mandarin'},
   ]);
 
   return (
@@ -28,7 +28,9 @@ const Launch: React.FC = () => {
             setItems={setItems}
             containerStyle={style.dropdown}
           />
-          <TouchableOpacity style={style.button}>
+          <TouchableOpacity
+            style={style.button}
+            onPress={() => navigation.navigate('Punjabi')}>
             <Text style={style.BtnText}>Continue</Text>
           </TouchableOpacity>
         </View>
@@ -43,6 +45,7 @@ const style = StyleSheet.create({
     justifyContent: 'space-between',
     margin: 10,
     padding: 20,
+    backgroundColor: '#FFFFFF',
   },
   container: {
     flex: 0.3,
