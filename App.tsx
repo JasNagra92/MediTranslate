@@ -1,11 +1,9 @@
+import 'react-native-gesture-handler';
 import React from 'react';
-import {SafeAreaView, StyleSheet, View} from 'react-native';
+import {Button, StyleSheet} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
+import {createDrawerNavigator} from '@react-navigation/drawer';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import {SafeAreaProvider} from 'react-native-safe-area-context';
-import Chestpain from './src/components/Chestpain';
-import Header from './src/components/Header';
-import AbdoPain from './src/components/AbdoPain';
 import Launch from './src/components/Launch';
 import AssessmentSelect from './src/components/AssessmentSelect';
 import ChestPainQuestions from './src/components/ChestPainQuestions';
@@ -13,12 +11,19 @@ import MandarinChestPainQuestions from './src/components/MandarinChestPainQuesti
 import AbdoPainQuestions from './src/components/AbdoPainQuestions';
 
 const Stack = createNativeStackNavigator();
+const Drawer = createDrawerNavigator();
 
 const App = () => {
   return (
     <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen name="Home" component={Launch} />
+      {/* <Stack.Navigator>
+        <Stack.Screen
+          name="Home"
+          component={Launch}
+          options={{
+            headerRight: () => <Button title="settings" />,
+          }}
+        />
         <Stack.Screen name="Punjabi" component={AssessmentSelect} />
         <Stack.Screen name="Mandarin" component={AssessmentSelect} />
         <Stack.Screen
@@ -30,17 +35,10 @@ const App = () => {
           component={MandarinChestPainQuestions}
         />
         <Stack.Screen name="Punjabi Abdo pain" component={AbdoPainQuestions} />
-      </Stack.Navigator>
-      {/* <SafeAreaProvider>
-        <SafeAreaView style={styles.MainContainer}>
-          <Header title="Quick-Assess" />
-          <View style={styles.container}>
-            <Chestpain />
-            <AbdoPain />
-          </View>
-          <Launch />
-        </SafeAreaView>
-      </SafeAreaProvider> */}
+      </Stack.Navigator> */}
+      <Drawer.Navigator>
+        <Drawer.Screen name="home" component={Launch} />
+      </Drawer.Navigator>
     </NavigationContainer>
   );
 };

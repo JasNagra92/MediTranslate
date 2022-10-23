@@ -391,6 +391,35 @@ PODS:
     - React-jsi (= 0.70.2)
     - React-logger (= 0.70.2)
     - React-perflogger (= 0.70.2)
+  - RNGestureHandler (2.8.0):
+    - React-Core
+  - RNReanimated (2.11.0):
+    - DoubleConversion
+    - FBLazyVector
+    - FBReactNativeSpec
+    - glog
+    - RCT-Folly
+    - RCTRequired
+    - RCTTypeSafety
+    - React-callinvoker
+    - React-Core
+    - React-Core/DevSupport
+    - React-Core/RCTWebSocket
+    - React-CoreModules
+    - React-cxxreact
+    - React-jsi
+    - React-jsiexecutor
+    - React-jsinspector
+    - React-RCTActionSheet
+    - React-RCTAnimation
+    - React-RCTBlob
+    - React-RCTImage
+    - React-RCTLinking
+    - React-RCTNetwork
+    - React-RCTSettings
+    - React-RCTText
+    - ReactCommon/turbomodule/core
+    - Yoga
   - RNScreens (3.18.2):
     - React-Core
     - React-RCTImage
@@ -471,6 +500,8 @@ DEPENDENCIES:
   - React-RCTVibration (from `../node_modules/react-native/Libraries/Vibration`)
   - React-runtimeexecutor (from `../node_modules/react-native/ReactCommon/runtimeexecutor`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
+  - RNGestureHandler (from `../node_modules/react-native-gesture-handler`)
+  - RNReanimated (from `../node_modules/react-native-reanimated`)
   - RNScreens (from `../node_modules/react-native-screens`)
   - RNSoundPlayer (from `../node_modules/react-native-sound-player`)
   - RNSVG (from `../node_modules/react-native-svg`)
@@ -579,6 +610,10 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/runtimeexecutor"
   ReactCommon:
     :path: "../node_modules/react-native/ReactCommon"
+  RNGestureHandler:
+    :path: "../node_modules/react-native-gesture-handler"
+  RNReanimated:
+    :path: "../node_modules/react-native-reanimated"
   RNScreens:
     :path: "../node_modules/react-native-screens"
   RNSoundPlayer:
@@ -644,6 +679,8 @@ SPEC CHECKSUMS:
   React-RCTVibration: 89e2cbea456ac5ec623943661d00e4dc45fe74b9
   React-runtimeexecutor: 80065f60af4f4b05603661070c8622bb3740bf16
   ReactCommon: 1209130f460e4aa9d255ddc75fa0a827ebf93dfb
+  RNGestureHandler: 62232ba8f562f7dea5ba1b3383494eb5bf97a4d3
+  RNReanimated: 78902cc72bc59a8d3aa9af1670558ba2dea2e87b
   RNScreens: 34cc502acf1b916c582c60003dc3089fa01dc66d
   RNSoundPlayer: 369105c565b8fe6ea0a43fc882dc81eba444e842
   RNSVG: 07dbd870b0dcdecc99b3a202fa37c8ca163caec2
