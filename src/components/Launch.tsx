@@ -4,7 +4,7 @@ import {Shadow} from 'react-native-shadow-2';
 import DropDownPicker from 'react-native-dropdown-picker';
 interface props {
   navigation: {
-    navigate: (screen: string) => void;
+    navigate: (screen: string | null) => void;
   };
 }
 
@@ -35,7 +35,8 @@ const Launch: React.FC<props> = ({navigation}) => {
           />
           <TouchableOpacity
             style={style.button}
-            onPress={() => navigation.navigate('Punjabi')}>
+            disabled={value ? false : true}
+            onPress={() => navigation.navigate(value)}>
             <Text style={style.BtnText}>Continue</Text>
           </TouchableOpacity>
         </View>

@@ -7,8 +7,9 @@ import Chestpain from './src/components/Chestpain';
 import Header from './src/components/Header';
 import AbdoPain from './src/components/AbdoPain';
 import Launch from './src/components/Launch';
-import PunjabiAssess from './src/components/PunjabiAssess';
+import AssessmentSelect from './src/components/AssessmentSelect';
 import ChestPainQuestions from './src/components/ChestPainQuestions';
+import MandarinChestPainQuestions from './src/components/MandarinChestPainQuestions';
 import AbdoPainQuestions from './src/components/AbdoPainQuestions';
 
 const Stack = createNativeStackNavigator();
@@ -18,10 +19,15 @@ const App = () => {
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen name="Home" component={Launch} />
-        <Stack.Screen name="Punjabi" component={PunjabiAssess} />
+        <Stack.Screen name="Punjabi" component={AssessmentSelect} />
+        <Stack.Screen name="Mandarin" component={AssessmentSelect} />
         <Stack.Screen
           name="Punjabi Chest pain"
           component={ChestPainQuestions}
+        />
+        <Stack.Screen
+          name="Mandarin Chest pain"
+          component={MandarinChestPainQuestions}
         />
         <Stack.Screen name="Punjabi Abdo pain" component={AbdoPainQuestions} />
       </Stack.Navigator>

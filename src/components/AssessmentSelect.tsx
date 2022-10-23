@@ -1,13 +1,15 @@
 import React from 'react';
 import {Shadow} from 'react-native-shadow-2';
 import {TouchableOpacity, View, Text, StyleSheet} from 'react-native';
+import {useRoute} from '@react-navigation/native';
 interface Props {
   navigation: {
-    navigate: (screen: string, object: {language: string}) => void;
+    navigate: (screen: string, route: {language: string}) => void;
   };
 }
 
-const PunjabiAssess: React.FC<Props> = ({navigation}) => {
+const AssessmentSelect: React.FC<Props> = ({navigation}) => {
+  const route = useRoute();
   return (
     <View style={style.mainContainer}>
       <Shadow
@@ -17,7 +19,9 @@ const PunjabiAssess: React.FC<Props> = ({navigation}) => {
         <TouchableOpacity
           style={style.button}
           onPress={() =>
-            navigation.navigate('Punjabi Chest pain', {language: 'punjabi'})
+            navigation.navigate(`${route.name} Chest pain`, {
+              language: `${route.name}`,
+            })
           }>
           <Text style={style.text}>Chest Pain</Text>
         </TouchableOpacity>
@@ -71,4 +75,4 @@ const style = StyleSheet.create({
   },
 });
 
-export default PunjabiAssess;
+export default AssessmentSelect;
