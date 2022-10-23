@@ -8,6 +8,8 @@ import Header from './src/components/Header';
 import AbdoPain from './src/components/AbdoPain';
 import Launch from './src/components/Launch';
 import PunjabiAssess from './src/components/PunjabiAssess';
+import ChestPainQuestions from './src/components/ChestPainQuestions';
+import AbdoPainQuestions from './src/components/AbdoPainQuestions';
 
 const Stack = createNativeStackNavigator();
 
@@ -17,6 +19,11 @@ const App = () => {
       <Stack.Navigator>
         <Stack.Screen name="Home" component={Launch} />
         <Stack.Screen name="Punjabi" component={PunjabiAssess} />
+        <Stack.Screen
+          name="Punjabi Chest pain"
+          component={ChestPainQuestions}
+        />
+        <Stack.Screen name="Punjabi Abdo pain" component={AbdoPainQuestions} />
       </Stack.Navigator>
       {/* <SafeAreaProvider>
         <SafeAreaView style={styles.MainContainer}>

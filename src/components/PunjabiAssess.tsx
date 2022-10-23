@@ -1,15 +1,24 @@
 import React from 'react';
 import {Shadow} from 'react-native-shadow-2';
 import {TouchableOpacity, View, Text, StyleSheet} from 'react-native';
+interface Props {
+  navigation: {
+    navigate: (screen: string, object: {language: string}) => void;
+  };
+}
 
-const PunjabiAssess: React.FC = () => {
+const PunjabiAssess: React.FC<Props> = ({navigation}) => {
   return (
     <View style={style.mainContainer}>
       <Shadow
         stretch={true}
         style={style.shadowContainer}
         containerStyle={style.buttonContainer}>
-        <TouchableOpacity style={style.button}>
+        <TouchableOpacity
+          style={style.button}
+          onPress={() =>
+            navigation.navigate('Punjabi Chest pain', {language: 'punjabi'})
+          }>
           <Text style={style.text}>Chest Pain</Text>
         </TouchableOpacity>
       </Shadow>
@@ -17,7 +26,11 @@ const PunjabiAssess: React.FC = () => {
         style={style.shadowContainer}
         stretch={true}
         containerStyle={style.buttonContainer}>
-        <TouchableOpacity style={style.button}>
+        <TouchableOpacity
+          style={style.button}
+          onPress={() =>
+            navigation.navigate('Punjabi Abdo pain', {language: 'punjabi'})
+          }>
           <Text style={style.text}>Abdo pain</Text>
         </TouchableOpacity>
       </Shadow>

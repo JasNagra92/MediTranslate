@@ -1,23 +1,39 @@
 import React from 'react';
+import {Shadow} from 'react-native-shadow-2';
 import {TouchableOpacity, StyleSheet, View, Text} from 'react-native';
 interface Props {
   question: string;
   filename: string;
   phonetic: string;
+  language: string;
 }
 import {useSound} from './hooks/useSound';
 
-const Question: React.FC<Props> = ({question, filename, phonetic}) => {
+const Question: React.FC<Props> = ({
+  question,
+  filename,
+  phonetic,
+  language,
+}) => {
   const {play} = useSound();
   return (
     <View style={style.container}>
-      <TouchableOpacity
-        style={style.button}
-        activeOpacity={0.7}
-        onPress={() => play(filename)}>
+      <View style={style.topContainer}>
         <Text style={style.text}>{question}</Text>
-        <Text style={style.text2}>{phonetic}</Text>
-      </TouchableOpacity>
+      </View>
+      <Shadow
+        stretch={true}
+        style={style.shadowContainer}
+        containerStyle={style.buttonContainer}>
+        <TouchableOpacity
+          style={style.button}
+          activeOpacity={0.7}
+          onPress={() => play(filename)}>
+          <Text style={style.textLang}>{language}</Text>
+          <Text style={style.text}>{phonetic}</Text>
+        </TouchableOpacity>
+      </Shadow>
+      <View style={style.line} />
     </View>
   );
 };
@@ -25,25 +41,50 @@ export default Question;
 const style = StyleSheet.create({
   container: {
     width: '100%',
+    justifyContent: 'space-evenly',
+  },
+  topContainer: {
+    width: '80%',
+    borderRadius: 10,
+    backgroundColor: 'rgba(70, 111, 255, 0.78)',
+    alignSelf: 'center',
+    marginVertical: 10,
+    padding: 20,
   },
   button: {
-    padding: 40,
-    width: '90%',
-    alignSelf: 'center',
-    borderRadius: 4,
+    padding: 20,
+    borderRadius: 10,
     borderWidth: 1,
     borderColor: 'green',
-    backgroundColor: 'lightblue',
+    backgroundColor: 'black',
   },
   text: {
     textAlign: 'center',
-    fontSize: 20,
-    color: 'black',
-    fontWeight: '900',
+    fontSize: 18,
+    color: 'white',
+    padding: 3,
   },
-  text2: {
+  textLang: {
     textAlign: 'center',
-    fontSize: 20,
-    color: 'black',
+    fontSize: 18,
+    color: 'white',
+    padding: 3,
+    fontWeight: '700',
+  },
+  line: {
+    borderBottomColor: 'black',
+    borderBottomWidth: StyleSheet.hairlineWidth,
+  },
+  buttonContainer: {
+    width: '80%',
+    justifyContent: 'center',
+    alignItems: 'center',
+    alignSelf: 'center',
+    borderRadius: 10,
+    marginBottom: 10,
+  },
+  shadowContainer: {
+    justifyContent: 'center',
+    alignSelf: 'center',
   },
 });
