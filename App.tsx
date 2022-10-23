@@ -1,43 +1,61 @@
 import 'react-native-gesture-handler';
 import React from 'react';
-import {Button, StyleSheet} from 'react-native';
+import {Button, StyleSheet, Text} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import {createDrawerNavigator} from '@react-navigation/drawer';
-import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import Launch from './src/components/Launch';
 import AssessmentSelect from './src/components/AssessmentSelect';
 import ChestPainQuestions from './src/components/ChestPainQuestions';
-import MandarinChestPainQuestions from './src/components/MandarinChestPainQuestions';
 import AbdoPainQuestions from './src/components/AbdoPainQuestions';
+import MandarinChestPainQuestions from './src/components/MandarinChestPainQuestions';
+import MandarinAbdoPainQuestions from './src/components/MandarinAbdoPainQuestions';
 
-const Stack = createNativeStackNavigator();
 const Drawer = createDrawerNavigator();
 
 const App = () => {
   return (
     <NavigationContainer>
-      {/* <Stack.Navigator>
-        <Stack.Screen
-          name="Home"
-          component={Launch}
-          options={{
-            headerRight: () => <Button title="settings" />,
-          }}
-        />
-        <Stack.Screen name="Punjabi" component={AssessmentSelect} />
-        <Stack.Screen name="Mandarin" component={AssessmentSelect} />
-        <Stack.Screen
+      <Drawer.Navigator
+        backBehavior="initialRoute"
+        screenOptions={({navigation}) => ({
+          headerRight: () => (
+            <Button title="menu" onPress={() => navigation.openDrawer()} />
+          ),
+          headerLeftContainerStyle: {display: 'none'},
+          headerTitleStyle: {display: 'none'},
+          drawerPosition: 'right',
+        })}>
+        <Drawer.Screen name="Home" component={Launch} />
+        <Drawer.Screen
           name="Punjabi Chest pain"
           component={ChestPainQuestions}
+          initialParams={{language: 'Punjabi'}}
         />
-        <Stack.Screen
+        <Drawer.Screen
+          name="Punjabi Abdo pain"
+          component={AbdoPainQuestions}
+          initialParams={{language: 'Punjabi'}}
+        />
+        <Drawer.Screen
           name="Mandarin Chest pain"
           component={MandarinChestPainQuestions}
+          initialParams={{language: 'Mandarin'}}
         />
-        <Stack.Screen name="Punjabi Abdo pain" component={AbdoPainQuestions} />
-      </Stack.Navigator> */}
-      <Drawer.Navigator>
-        <Drawer.Screen name="home" component={Launch} />
+        <Drawer.Screen
+          name="Mandarin Abdo pain"
+          component={MandarinAbdoPainQuestions}
+          initialParams={{language: 'Mandarin'}}
+        />
+        <Drawer.Screen
+          name="Punjabi"
+          component={AssessmentSelect}
+          options={{drawerLabelStyle: {display: 'none'}}}
+        />
+        <Drawer.Screen
+          name="Mandarin"
+          component={AssessmentSelect}
+          options={{drawerLabelStyle: {display: 'none'}}}
+        />
       </Drawer.Navigator>
     </NavigationContainer>
   );

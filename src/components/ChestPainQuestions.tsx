@@ -1,22 +1,14 @@
-import React, {useEffect} from 'react';
-import {StyleSheet, ScrollView, View, Button} from 'react-native';
+import React from 'react';
+import {StyleSheet, ScrollView, View} from 'react-native';
 import Question from './Question';
 interface Props {
   route?: {
     params: {language: string};
   };
-  navigation: {setOptions: (any) => void};
 }
 
-const ChestPainQuestions: React.FC<Props> = ({route, navigation}) => {
+const ChestPainQuestions: React.FC<Props> = ({route}) => {
   const {language} = route.params;
-  useEffect(() => {
-    navigation.setOptions({
-      headerRight: () => (
-        <Button title="settings" onPress={() => alert('test')} />
-      ),
-    });
-  });
   return (
     <View style={style.container}>
       <ScrollView style={style.container}>
