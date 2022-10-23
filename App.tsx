@@ -1,6 +1,6 @@
 import 'react-native-gesture-handler';
 import React from 'react';
-import {Button, StyleSheet, Text} from 'react-native';
+import {Button, StyleSheet} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import {createDrawerNavigator} from '@react-navigation/drawer';
 import Launch from './src/components/Launch';
@@ -9,6 +9,7 @@ import ChestPainQuestions from './src/components/ChestPainQuestions';
 import AbdoPainQuestions from './src/components/AbdoPainQuestions';
 import MandarinChestPainQuestions from './src/components/MandarinChestPainQuestions';
 import MandarinAbdoPainQuestions from './src/components/MandarinAbdoPainQuestions';
+import Icon from 'react-native-vector-icons/MaterialIcons';
 
 const Drawer = createDrawerNavigator();
 
@@ -19,7 +20,11 @@ const App = () => {
         backBehavior="initialRoute"
         screenOptions={({navigation}) => ({
           headerRight: () => (
-            <Button title="menu" onPress={() => navigation.openDrawer()} />
+            <Icon
+              name="menu"
+              size={40}
+              onPress={() => navigation.openDrawer()}
+            />
           ),
           headerLeftContainerStyle: {display: 'none'},
           headerTitleStyle: {display: 'none'},
