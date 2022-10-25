@@ -1,6 +1,6 @@
 import 'react-native-gesture-handler';
 import React from 'react';
-import {Button, StyleSheet} from 'react-native';
+import {StyleSheet} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import {createDrawerNavigator} from '@react-navigation/drawer';
 import Launch from './src/components/Launch';
@@ -27,7 +27,6 @@ const App = () => {
             />
           ),
           headerLeftContainerStyle: {display: 'none'},
-          headerTitleStyle: {display: 'none'},
           drawerPosition: 'right',
         })}>
         <Drawer.Screen name="Home" component={Launch} />

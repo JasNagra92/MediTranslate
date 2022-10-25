@@ -33,7 +33,9 @@ const AssessmentSelect: React.FC<Props> = ({navigation}) => {
         <TouchableOpacity
           style={style.button}
           onPress={() =>
-            navigation.navigate('Punjabi Abdo pain', {language: 'punjabi'})
+            navigation.navigate(`${route.name} Abdo pain`, {
+              language: `${route.name}`,
+            })
           }>
           <Text style={style.text}>Abdo pain</Text>
         </TouchableOpacity>

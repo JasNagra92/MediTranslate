@@ -1,11 +1,13 @@
 import React from 'react';
 import {Shadow} from 'react-native-shadow-2';
 import {TouchableOpacity, StyleSheet, View, Text} from 'react-native';
+import Icon from 'react-native-vector-icons/MaterialIcons';
 interface Props {
   question: string;
   filename: string;
-  phonetic: string;
+  phonetic?: string;
   language: string;
+  filetype: string;
 }
 import {useSound} from './hooks/useSound';
 
@@ -14,6 +16,7 @@ const Question: React.FC<Props> = ({
   filename,
   phonetic,
   language,
+  filetype,
 }) => {
   const {play} = useSound();
   return (
@@ -28,9 +31,12 @@ const Question: React.FC<Props> = ({
         <TouchableOpacity
           style={style.button}
           activeOpacity={0.7}
-          onPress={() => play(filename)}>
+          onPress={() => play(filename, filetype)}>
           <Text style={style.textLang}>{language}</Text>
           <Text style={style.text}>{phonetic}</Text>
+          <View style={{alignSelf: 'center', paddingTop: 4}}>
+            <Icon name="play-circle-fill" size={25} color="white" />
+          </View>
         </TouchableOpacity>
       </Shadow>
       <View style={style.line} />

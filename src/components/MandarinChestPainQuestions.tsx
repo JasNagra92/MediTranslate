@@ -14,45 +14,45 @@ const MandarinChestPainQuestions: React.FC<Props> = ({route}) => {
       <ScrollView style={style.container}>
         <Question
           question="Are you having Chest Pain chinese?"
-          filename="test"
-          phonetic="Sha-tee vich daa-rd hun-dah-ya"
+          filename="q1cpm"
           language={language}
+          filetype="wav"
         />
         <Question
           question="When did the pain start?"
-          filename="q4cp"
-          phonetic="daa-rd shu-ru ku-dho ho-iya"
+          filename="q2cpm"
           language={language}
+          filetype="wav"
         />
         <Question
           question="Are you also Short of Breath?"
-          filename="q5cp"
-          phonetic="(saah vee thu-wa-noo char-dah)"
+          filename="q3cpm"
           language={language}
+          filetype="wav"
         />
         <Question
           question="Is the pain worse when you take a deep breath?"
-          filename="q6cp"
-          phonetic="lum-bah saah leh-kay daa-rd budth-daah-ya"
+          filename="q4cpm"
           language={language}
+          filetype="wav"
         />
         <Question
           question="Are you Nauseated?"
-          filename="q2cp"
-          phonetic="twan-nuu alt-tee awn-nu jee kard-dah-ya"
+          filename="q5cpm"
           language={language}
+          filetype="wav"
         />
         <Question
           question="Does the pain radiate to your back?"
-          filename="q3cp"
-          phonetic="daa-rd too-hee vich vee jand-dah-ya"
+          filename="q6cpm"
           language={language}
+          filetype="wav"
         />
         <Question
           question="Are you Dizzy?"
-          filename="***"
-          phonetic="Chak-rr awn-dah-ya"
+          filename="q7cpm"
           language={language}
+          filetype="wav"
         />
       </ScrollView>
     </View>

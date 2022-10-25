@@ -13,27 +13,27 @@ const MandarinAbdoPainQuestions: React.FC<Props> = ({route}) => {
     <ScrollView style={style.container}>
       <Question
         question="Use your hand to show me where the pain is"
-        filename="q1ap"
-        phonetic="haa-th naal meh-nu thi-kah daa-rd kith-eh aah"
+        filename="q1apm"
         language={language}
+        filetype="wav"
       />
       <Question
         question="Are you Nauseated?"
         filename="q2cp"
-        phonetic="twan-nuu alt-tee awn-nu jee kard-dah-ya"
         language={language}
+        filetype="wav"
       />
       <Question
         question="Have you thrown up today?"
-        filename="q3ap"
-        phonetic="ul-tee aaj twan-nuu aiee ah"
+        filename="q3apm"
         language={language}
+        filetype="wav"
       />
       <Question
         question="Was there any blood in your vomit?"
-        filename="q4ap"
-        phonetic="twan-nuu ul-tee vich koon suh-gah"
+        filename="q4apm"
         language={language}
+        filetype="wav"
       />
     </ScrollView>
   );

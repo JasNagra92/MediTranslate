@@ -16,24 +16,28 @@ const AbdoPainQuestions: React.FC<Props> = ({route}) => {
         filename="q1ap"
         phonetic="haa-th naal meh-nu thi-kah daa-rd kith-eh aah"
         language={language}
+        filetype="mp3"
       />
       <Question
         question="Are you Nauseated?"
         filename="q2cp"
         phonetic="twan-nuu alt-tee awn-nu jee kard-dah-ya"
         language={language}
+        filetype="mp3"
       />
       <Question
         question="Have you thrown up today?"
         filename="q3ap"
         phonetic="ul-tee aaj twan-nuu aiee ah"
         language={language}
+        filetype="mp3"
       />
       <Question
         question="Was there any blood in your vomit?"
         filename="q4ap"
         phonetic="twan-nuu ul-tee vich koon suh-gah"
         language={language}
+        filetype="mp3"
       />
     </ScrollView>
   );
