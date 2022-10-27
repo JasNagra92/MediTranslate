@@ -1,6 +1,13 @@
 import React from 'react';
+import {useNavigation} from '@react-navigation/native';
 import {Shadow} from 'react-native-shadow-2';
-import {TouchableOpacity, StyleSheet, View, Text} from 'react-native';
+import {
+  TouchableOpacity,
+  StyleSheet,
+  View,
+  Text,
+  Pressable,
+} from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 interface Props {
   question: string;
@@ -8,6 +15,7 @@ interface Props {
   phonetic?: string;
   language: string;
   filetype: string;
+  originalText?: string;
 }
 import {useSound} from './hooks/useSound';
 
@@ -17,7 +25,9 @@ const Question: React.FC<Props> = ({
   phonetic,
   language,
   filetype,
+  originalText,
 }) => {
+  const navigation = useNavigation();
   const {play} = useSound();
   return (
     <View style={style.container}>
@@ -34,7 +44,16 @@ const Question: React.FC<Props> = ({
           onPress={() => play(filename, filetype)}>
           <Text style={style.textLang}>{language}</Text>
           <Text style={style.text}>{phonetic}</Text>
-          <View style={{alignSelf: 'center', paddingTop: 4}}>
+          {originalText ? <Text style={style.text}>{originalText}</Text> : null}
+          <View style={style.iconContainer}>
+            <Pressable
+              onPress={() =>
+                navigation.navigate('FullScreen', {
+                  text: `${originalText}`,
+                })
+              }>
+              <Icon name="expand" size={25} color="white" />
+            </Pressable>
             <Icon name="play-circle-fill" size={25} color="white" />
           </View>
         </TouchableOpacity>
@@ -92,5 +111,12 @@ const style = StyleSheet.create({
   shadowContainer: {
     justifyContent: 'center',
     alignSelf: 'center',
+  },
+  iconContainer: {
+    alignSelf: 'center',
+    width: '100%',
+    paddingTop: 4,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
   },
 });

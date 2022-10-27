@@ -10,6 +10,8 @@ import AbdoPainQuestions from './src/components/AbdoPainQuestions';
 import MandarinChestPainQuestions from './src/components/MandarinChestPainQuestions';
 import MandarinAbdoPainQuestions from './src/components/MandarinAbdoPainQuestions';
 import Icon from 'react-native-vector-icons/MaterialIcons';
+import FullScreen from './src/components/FullScreen';
+import Question from './src/components/Question';
 
 const Drawer = createDrawerNavigator();
 
@@ -60,17 +62,14 @@ const App = () => {
           component={AssessmentSelect}
           options={{drawerLabelStyle: {display: 'none'}}}
         />
+        <Drawer.Screen
+          name="FullScreen"
+          component={FullScreen}
+          options={{drawerLabelStyle: {display: 'none'}}}
+        />
       </Drawer.Navigator>
     </NavigationContainer>
   );
 };
-
-const styles = StyleSheet.create({
-  MainContainer: {
-    flex: 1,
-    backgroundColor: '#FFFFFF',
-  },
-  container: {flex: 1},
-});
 
 export default App;
