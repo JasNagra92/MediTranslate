@@ -39,13 +39,13 @@ const style = StyleSheet.create({
   icon: {
     position: 'absolute',
     left: 35,
-    top: 350,
+    top: 300,
     transform: [{rotate: '90deg'}],
   },
   icon2: {
     position: 'absolute',
     left: 35,
-    bottom: 350,
+    bottom: 300,
     transform: [{rotate: '90deg'}],
   },
 });

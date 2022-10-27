@@ -29,7 +29,7 @@ const Question: React.FC<Props> = ({
 }) => {
   const navigation = useNavigation();
   const {play} = useSound();
-  const [text, setText] = useState('phonetic');
+  const [text, setText] = useState(phonetic ? 'phonetic' : 'original');
   return (
     <View style={style.container}>
       <View style={style.topContainer}>
@@ -60,12 +60,14 @@ const Question: React.FC<Props> = ({
               <Icon name="expand" size={30} color="white" />
             </Pressable>
             <Icon name="play-circle-fill" size={30} color="white" />
-            <Pressable
-              onPress={() =>
-                setText(text === 'phonetic' ? 'original' : 'phonetic')
-              }>
-              <Icon name="flip" size={30} color="white" />
-            </Pressable>
+            {phonetic && originalText ? (
+              <Pressable
+                onPress={() =>
+                  setText(text === 'phonetic' ? 'original' : 'phonetic')
+                }>
+                <Icon name="flip" size={30} color="white" />
+              </Pressable>
+            ) : null}
           </View>
         </TouchableOpacity>
       </Shadow>
