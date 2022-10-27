@@ -16,28 +16,28 @@ const MandarinAbdoPainQuestions: React.FC<Props> = ({route}) => {
         filename="q1apm"
         language={language}
         filetype="wav"
-        originalText="用你的手指给我看哪里疼"
+        originalText="用你的手指给我看哪里疼?"
       />
       <Question
         question="Are you Nauseated?"
         filename="q2cp"
         language={language}
         filetype="wav"
-        originalText="你感到恶心吗？"
+        originalText="你感到恶心吗?"
       />
       <Question
         question="Have you thrown up today?"
         filename="q3apm"
         language={language}
         filetype="wav"
-        originalText="你今天吐了吗？"
+        originalText="你今天吐了吗?"
       />
       <Question
         question="Was there any blood in your vomit?"
         filename="q4apm"
         language={language}
         filetype="wav"
-        originalText="Was there any blood in your vomit?"
+        originalText="你的呕吐物中有血吗?"
       />
     </ScrollView>
   );

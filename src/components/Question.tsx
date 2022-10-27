@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {useNavigation} from '@react-navigation/native';
 import {Shadow} from 'react-native-shadow-2';
 import {
@@ -29,6 +29,7 @@ const Question: React.FC<Props> = ({
 }) => {
   const navigation = useNavigation();
   const {play} = useSound();
+  const [text, setText] = useState('phonetic');
   return (
     <View style={style.container}>
       <View style={style.topContainer}>
@@ -43,18 +44,28 @@ const Question: React.FC<Props> = ({
           activeOpacity={0.7}
           onPress={() => play(filename, filetype)}>
           <Text style={style.textLang}>{language}</Text>
-          <Text style={style.text}>{phonetic}</Text>
-          {originalText ? <Text style={style.text}>{originalText}</Text> : null}
+          {text === 'phonetic' && <Text style={style.text}>{phonetic}</Text>}
+          {text === 'original' && (
+            <Text style={style.text}>{originalText}</Text>
+          )}
           <View style={style.iconContainer}>
             <Pressable
               onPress={() =>
                 navigation.navigate('FullScreen', {
                   text: `${originalText}`,
+                  filename: `${filename}`,
+                  filetype: `${filetype}`,
                 })
               }>
-              <Icon name="expand" size={25} color="white" />
+              <Icon name="expand" size={30} color="white" />
             </Pressable>
-            <Icon name="play-circle-fill" size={25} color="white" />
+            <Icon name="play-circle-fill" size={30} color="white" />
+            <Pressable
+              onPress={() =>
+                setText(text === 'phonetic' ? 'original' : 'phonetic')
+              }>
+              <Icon name="flip" size={30} color="white" />
+            </Pressable>
           </View>
         </TouchableOpacity>
       </Shadow>
@@ -85,7 +96,7 @@ const style = StyleSheet.create({
   },
   text: {
     textAlign: 'center',
-    fontSize: 18,
+    fontSize: 22,
     color: 'white',
     padding: 3,
   },

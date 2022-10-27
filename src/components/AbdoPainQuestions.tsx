@@ -17,6 +17,7 @@ const AbdoPainQuestions: React.FC<Props> = ({route}) => {
         phonetic="haa-th naal meh-nu thi-kah daa-rd kith-eh aah"
         language={language}
         filetype="mp3"
+        originalText="ਮੈਨੂੰ ਇਹ ਦਿਖਾਉਣ ਲਈ ਆਪਣੇ ਹੱਥ ਦੀ ਵਰਤੋਂ ਕਰੋ ਕਿ ਦਰਦ ਕਿੱਥੇ ਹੈ"
       />
       <Question
         question="Are you Nauseated?"
@@ -24,6 +25,7 @@ const AbdoPainQuestions: React.FC<Props> = ({route}) => {
         phonetic="twan-nuu alt-tee awn-nu jee kard-dah-ya"
         language={language}
         filetype="mp3"
+        originalText="ਕੀ ਤੁਸੀਂ ਉਲਟੀ ਕਰਨ ਜਾ ਰਹੇ ਹੋ?"
       />
       <Question
         question="Have you thrown up today?"
@@ -31,6 +33,7 @@ const AbdoPainQuestions: React.FC<Props> = ({route}) => {
         phonetic="ul-tee aaj twan-nuu aiee ah"
         language={language}
         filetype="mp3"
+        originalText="ਕੀ ਤੁਸੀਂ ਅੱਜ ਉਲਟੀ ਕੀਤੀ ਹੈ?"
       />
       <Question
         question="Was there any blood in your vomit?"
@@ -38,6 +41,7 @@ const AbdoPainQuestions: React.FC<Props> = ({route}) => {
         phonetic="twan-nuu ul-tee vich koon suh-gah"
         language={language}
         filetype="mp3"
+        originalText="ਕੀ ਤੁਹਾਡੀ ਉਲਟੀ ਵਿੱਚ ਖੂਨ ਸੀ?"
       />
     </ScrollView>
   );

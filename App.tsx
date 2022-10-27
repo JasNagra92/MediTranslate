@@ -19,7 +19,7 @@ const App = () => {
   return (
     <NavigationContainer>
       <Drawer.Navigator
-        backBehavior="initialRoute"
+        backBehavior="history"
         screenOptions={({navigation}) => ({
           headerRight: () => (
             <Icon
@@ -60,12 +60,14 @@ const App = () => {
         <Drawer.Screen
           name="Mandarin"
           component={AssessmentSelect}
-          options={{drawerLabelStyle: {display: 'none'}}}
+          options={{
+            drawerLabelStyle: {display: 'none'},
+          }}
         />
         <Drawer.Screen
           name="FullScreen"
           component={FullScreen}
-          options={{drawerLabelStyle: {display: 'none'}}}
+          options={{drawerLabelStyle: {display: 'none'}, headerShown: false}}
         />
       </Drawer.Navigator>
     </NavigationContainer>

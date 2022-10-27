@@ -17,49 +17,49 @@ const MandarinChestPainQuestions: React.FC<Props> = ({route}) => {
           filename="q1cpm"
           language={language}
           filetype="wav"
-          originalText="你的胸口痛吗？"
+          originalText="你的胸口痛吗?"
         />
         <Question
           question="When did the pain start?"
           filename="q2cpm"
           language={language}
           filetype="wav"
-          originalText="什么时候开始痛的？"
+          originalText="什么时候开始痛的?"
         />
         <Question
           question="Are you also Short of Breath?"
           filename="q3cpm"
           language={language}
           filetype="wav"
-          originalText="你也呼吸短促吗？"
+          originalText="你也呼吸短促吗?"
         />
         <Question
           question="Is the pain worse when you take a deep breath?"
           filename="q4cpm"
           language={language}
           filetype="wav"
-          originalText="深呼吸的时候疼的更厉害吗？"
+          originalText="深呼吸的时候疼的更厉害吗?"
         />
         <Question
           question="Are you Nauseated?"
           filename="q5cpm"
           language={language}
           filetype="wav"
-          originalText="你感到恶心吗？"
+          originalText="你感到恶心吗?"
         />
         <Question
           question="Does the pain radiate to your back?"
           filename="q6cpm"
           language={language}
           filetype="wav"
-          originalText="疼痛会辐射到你的背部吗？"
+          originalText="疼痛会辐射到你的背部吗?"
         />
         <Question
           question="Are you Dizzy?"
           filename="q7cpm"
           language={language}
           filetype="wav"
-          originalText="你头晕吗"
+          originalText="你头晕吗?"
         />
       </ScrollView>
     </View>
