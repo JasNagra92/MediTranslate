@@ -20,7 +20,7 @@ const MandarinAbdoPainQuestions: React.FC<Props> = ({route}) => {
       />
       <Question
         question="Are you Nauseated?"
-        filename="q2cp"
+        filename="q5cpm"
         language={language}
         filetype="wav"
         originalText="你感到恶心吗?"
