@@ -41,30 +41,29 @@ const Launch: React.FC<props> = ({navigation}) => {
           </TouchableOpacity>
         </View>
       </Shadow>
-      <View style={style.container} />
     </View>
   );
 };
 const style = StyleSheet.create({
   mainContainer: {
     flex: 1,
-    justifyContent: 'space-between',
+    justifyContent: 'space-around',
     alignItems: 'center',
     backgroundColor: '#FFFFFF',
+  },
+  container2: {
+    flex: 0.1,
   },
   container: {
     flex: 0.3,
     alignSelf: 'center',
-    paddingTop: 60,
   },
   selectContainer: {
-    flex: 0.3,
+    flex: 0.55,
     backgroundColor: '#FFFFFF',
     borderRadius: 15,
     width: 330,
-    height: 194,
     paddingLeft: 20,
-    paddingTop: 20,
   },
   image: {
     width: 219,
@@ -74,6 +73,7 @@ const style = StyleSheet.create({
     fontFamily: 'Poppins',
     fontStyle: 'normal',
     fontSize: 14,
+    paddingVertical: 10,
   },
   BtnText: {
     color: 'white',
@@ -90,7 +90,6 @@ const style = StyleSheet.create({
   },
   dropdown: {
     paddingRight: 20,
-    marginTop: 10,
   },
 });
 

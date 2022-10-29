@@ -13,7 +13,7 @@ const MandarinChestPainQuestions: React.FC<Props> = ({route}) => {
     <View style={style.container}>
       <ScrollView style={style.container}>
         <Question
-          question="Are you having Chest Pain chinese?"
+          question="Are you having Chest Pain?"
           filename="q1cpm"
           language={language}
           filetype="wav"
