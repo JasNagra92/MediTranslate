@@ -21,45 +21,46 @@ const Launch: React.FC<props> = ({navigation}) => {
       <View style={style.container}>
         <Image style={style.image} source={require('../assets/logo.png')} />
       </View>
-      <Shadow>
-        <View style={style.selectContainer}>
-          <Text style={style.text}>Select your Language</Text>
-          <DropDownPicker
-            open={open}
-            value={value}
-            items={items}
-            setOpen={setOpen}
-            setValue={setValue}
-            setItems={setItems}
-            containerStyle={style.dropdown}
-          />
-          <TouchableOpacity
-            style={style.button}
-            disabled={value ? false : true}
-            onPress={() => navigation.navigate(value)}>
-            <Text style={style.BtnText}>Continue</Text>
-          </TouchableOpacity>
-        </View>
-      </Shadow>
+      <View style={style.test}>
+        <Shadow>
+          <View style={style.selectContainer}>
+            <Text style={style.text}>Select your Language</Text>
+            <DropDownPicker
+              open={open}
+              value={value}
+              items={items}
+              setOpen={setOpen}
+              setValue={setValue}
+              setItems={setItems}
+              containerStyle={style.dropdown}
+            />
+            <TouchableOpacity
+              style={style.button}
+              disabled={value ? false : true}
+              onPress={() => navigation.navigate(value)}>
+              <Text style={style.BtnText}>Continue</Text>
+            </TouchableOpacity>
+          </View>
+        </Shadow>
+      </View>
     </View>
   );
 };
 const style = StyleSheet.create({
   mainContainer: {
     flex: 1,
-    justifyContent: 'space-around',
     alignItems: 'center',
     backgroundColor: '#FFFFFF',
   },
-  container2: {
-    flex: 0.1,
-  },
   container: {
-    flex: 0.3,
+    flex: 0.5,
     alignSelf: 'center',
+    justifyContent: 'center',
+  },
+  test: {
+    flex: 0.5,
   },
   selectContainer: {
-    flex: 0.55,
     backgroundColor: '#FFFFFF',
     borderRadius: 15,
     width: 330,
@@ -86,7 +87,7 @@ const style = StyleSheet.create({
     borderRadius: 15,
     width: 290,
     height: 57,
-    marginTop: 20,
+    marginVertical: 20,
   },
   dropdown: {
     paddingRight: 20,
