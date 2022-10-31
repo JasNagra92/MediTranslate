@@ -10,15 +10,17 @@ const FullScreen: React.FC = () => {
   const navigation = useNavigation();
   return (
     <View style={style.container}>
+      <View style={style.iconContainer}>
+        <Pressable style={style.icon} onPress={() => navigation.goBack()}>
+          <Icon name="arrow-back" size={40} color="white" />
+        </Pressable>
+        <Pressable
+          style={style.icon2}
+          onPress={() => play(route.params.filename, route.params.filetype)}>
+          <Icon name="play-circle-fill" size={40} color="white" />
+        </Pressable>
+      </View>
       <Text style={style.text}>{route.params.text}</Text>
-      <Pressable style={style.icon} onPress={() => navigation.goBack()}>
-        <Icon name="arrow-back" size={40} color="white" />
-      </Pressable>
-      <Pressable
-        style={style.icon2}
-        onPress={() => play(route.params.filename, route.params.filetype)}>
-        <Icon name="play-circle-fill" size={40} color="white" />
-      </Pressable>
     </View>
   );
 };
@@ -28,8 +30,8 @@ const style = StyleSheet.create({
     height: '100%',
     backgroundColor: 'black',
     flex: 1,
+    flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'center',
   },
   text: {
     color: 'white',
@@ -37,15 +39,11 @@ const style = StyleSheet.create({
     transform: [{rotate: '90deg'}],
   },
   icon: {
-    position: 'absolute',
-    left: 35,
-    top: 300,
+    marginBottom: 40,
     transform: [{rotate: '90deg'}],
   },
   icon2: {
-    position: 'absolute',
-    left: 35,
-    bottom: 300,
+    marginTop: 40,
     transform: [{rotate: '90deg'}],
   },
 });
