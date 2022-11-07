@@ -24,7 +24,7 @@ const Launch: React.FC<props> = ({navigation}) => {
       <View style={style.test}>
         <Shadow>
           <View style={style.selectContainer}>
-            <Text style={style.text}>Select your Language</Text>
+            <Text style={style.text}>Select Patients Language</Text>
             <DropDownPicker
               open={open}
               value={value}

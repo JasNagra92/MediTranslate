@@ -11,7 +11,7 @@ import MandarinChestPainQuestions from './src/components/MandarinChestPainQuesti
 import MandarinAbdoPainQuestions from './src/components/MandarinAbdoPainQuestions';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import FullScreen from './src/components/FullScreen';
-import Question from './src/components/Question';
+import SuggestQuestion from './src/components/SuggestQuestion';
 
 const Drawer = createDrawerNavigator();
 
@@ -28,7 +28,13 @@ const App = () => {
               onPress={() => navigation.openDrawer()}
             />
           ),
-          headerLeftContainerStyle: {display: 'none'},
+          headerLeft: () => (
+            <Icon
+              name="arrow-back"
+              size={40}
+              onPress={() => navigation.goBack()}
+            />
+          ),
           drawerPosition: 'right',
         })}>
         <Drawer.Screen name="Home" component={Launch} />
@@ -55,19 +61,31 @@ const App = () => {
         <Drawer.Screen
           name="Punjabi"
           component={AssessmentSelect}
-          options={{drawerLabelStyle: {display: 'none'}}}
+          options={{drawerItemStyle: {display: 'none'}}}
         />
         <Drawer.Screen
           name="Mandarin"
           component={AssessmentSelect}
           options={{
-            drawerLabelStyle: {display: 'none'},
+            drawerItemStyle: {display: 'none'},
           }}
         />
         <Drawer.Screen
           name="FullScreen"
           component={FullScreen}
-          options={{drawerLabelStyle: {display: 'none'}, headerShown: false}}
+          options={{
+            drawerLabelStyle: {display: 'none'},
+            headerShown: false,
+            drawerItemStyle: {display: 'none'},
+          }}
+        />
+        <Drawer.Screen
+          name="Suggest A Question"
+          component={SuggestQuestion}
+          options={{
+            drawerLabelStyle: style.suggestionLabel,
+            drawerItemStyle: style.suggestionItem,
+          }}
         />
       </Drawer.Navigator>
     </NavigationContainer>
@@ -75,3 +93,12 @@ const App = () => {
 };
 
 export default App;
+const style = StyleSheet.create({
+  suggestionLabel: {
+    color: 'white',
+    fontWeight: '700',
+  },
+  suggestionItem: {
+    backgroundColor: 'blue',
+  },
+});
