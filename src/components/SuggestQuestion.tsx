@@ -12,7 +12,7 @@ const SuggestQuestion = () => {
   const [question, setQuestion] = useState<string>('');
 
   const handleEmail = () => {
-    const to = ['jasnagra92@hotmail.com'];
+    const to = ['MediTranslateQuestions@outlook.com'];
     email(to, {
       subject: 'Question Suggestion',
       body: question,
