@@ -2,14 +2,42 @@ import React from 'react';
 import {Shadow} from 'react-native-shadow-2';
 import {TouchableOpacity, View, Text, StyleSheet} from 'react-native';
 import {useRoute} from '@react-navigation/native';
+import {punjabi, mandarin} from './languageHelper';
 interface Props {
   navigation: {
-    navigate: (screen: string, route: {language: string}) => void;
+    navigate: (
+      screen: string,
+      route: {
+        language: string;
+        filename: string[];
+        filetype: string;
+        phonetic?: string[];
+        originalText: string[];
+      },
+    ) => void;
   };
+}
+interface Language {
+  filetype: string;
+  filename: string[];
+  originalText: string[];
+  phonetic?: string[];
 }
 
 const AssessmentSelect: React.FC<Props> = ({navigation}) => {
   const route = useRoute();
+
+  let language: Language;
+
+  switch (route.name) {
+    case 'Punjabi':
+      language = punjabi;
+      break;
+    case 'Mandarin':
+      language = mandarin;
+      break;
+  }
+
   return (
     <View style={style.mainContainer}>
       <Shadow
@@ -20,7 +48,11 @@ const AssessmentSelect: React.FC<Props> = ({navigation}) => {
           style={style.button}
           onPress={() =>
             navigation.navigate(`${route.name} Chest pain`, {
-              language: `${route.name}`,
+              language: route.name,
+              filename: language.filename,
+              phonetic: language.phonetic,
+              originalText: language.originalText,
+              filetype: language.filetype,
             })
           }>
           <Text style={style.text}>Chest Pain</Text>
@@ -34,7 +66,11 @@ const AssessmentSelect: React.FC<Props> = ({navigation}) => {
           style={style.button}
           onPress={() =>
             navigation.navigate(`${route.name} Abdo pain`, {
-              language: `${route.name}`,
+              language: route.name,
+              filename: language.filename,
+              phonetic: language.phonetic,
+              originalText: language.originalText,
+              filetype: language.filetype,
             })
           }>
           <Text style={style.text}>Abdo pain</Text>

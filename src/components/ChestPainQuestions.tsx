@@ -3,71 +3,81 @@ import {StyleSheet, ScrollView, View} from 'react-native';
 import Question from './Question';
 interface Props {
   route?: {
-    params: {language: string};
+    params: {
+      language: string;
+      filename: string[];
+      phonetic?: string[];
+      originalText: string[];
+      filetype: string;
+    };
   };
 }
 
 const ChestPainQuestions: React.FC<Props> = ({route}) => {
-  const {language} = route.params;
+  const {language, filename, phonetic, originalText, filetype} = route.params;
   return (
     <View style={style.container}>
       <ScrollView style={style.container}>
-        <Question
-          question="Are you having Chest Pain?"
-          filename="test"
-          phonetic="Sha-tee vich daa-rd hun-dah-ya"
-          language={language}
-          filetype="mp3"
-          originalText="ਕੀ ਤੁਹਾਨੂੰ ਛਾਤੀ ਵਿੱਚ ਦਰਦ ਹੈ?"
-        />
-        <Question
-          question="When did the pain start?"
-          filename="q4cp"
-          phonetic="daa-rd shu-ru ku-dho ho-iya"
-          language={language}
-          filetype="mp3"
-          originalText="ਦਰਦ ਕਦੋਂ ਸ਼ੁਰੂ ਹੋਇਆ?"
-        />
-        <Question
-          question="Are you also Short of Breath?"
-          filename="q5cp"
-          phonetic="(saah vee thu-wa-noo char-dah)"
-          language={language}
-          filetype="mp3"
-          originalText="ਸਾਹ ਲੈਣ ਵਿੱਚ ਮੁਸ਼ਕਲ ਹੈ"
-        />
-        <Question
-          question="Is the pain worse when you take a deep breath?"
-          filename="q6cp"
-          phonetic="lum-bah saah leh-kay daa-rd budth-daah-ya"
-          language={language}
-          filetype="mp3"
-          originalText="ਜਦੋਂ ਤੁਸੀਂ ਡੂੰਘਾ ਸਾਹ ਲੈਂਦੇ ਹੋ ਤਾਂ ਦਰਦ ਹੋਰ ਵੀ ਵੱਧ ਜਾਂਦਾ ਹੈ"
-        />
-        <Question
-          question="Are you Nauseated?"
-          filename="q2cp"
-          phonetic="twan-nuu alt-tee awn-nu jee kard-dah-ya"
-          language={language}
-          filetype="mp3"
-          originalText="ਕੀ ਤੁਸੀਂ ਉਲਟੀ ਕਰਨ ਜਾ ਰਹੇ ਹੋ?"
-        />
-        <Question
-          question="Does the pain radiate to your back?"
-          filename="q3cp"
-          phonetic="daa-rd too-hee vich vee jand-dah-ya"
-          language={language}
-          filetype="mp3"
-          originalText="ਕੀ ਤੁਹਾਨੂੰ ਪਿੱਠ ਵਿੱਚ ਦਰਦ ਹੈ?"
-        />
-        <Question
-          question="Are you Dizzy?"
-          filename="q7cp"
-          phonetic="twan-nuu Chak-rr awn-dah-ya"
-          language={language}
-          filetype="mp3"
-          originalText="ਕੀ ਤੁਹਾਨੂੰ ਚੱਕਰ ਆ ਰਹੇ ਹਨ"
-        />
+        {route.params && (
+          <View>
+            <Question
+              question="Are you having Chest Pain?"
+              filename={filename[0]}
+              phonetic={phonetic && phonetic[0]}
+              language={language}
+              filetype={filetype}
+              originalText={originalText[0]}
+            />
+            <Question
+              question="When did the pain start?"
+              filename={filename[1]}
+              phonetic={phonetic && phonetic[1]}
+              language={language}
+              filetype={filetype}
+              originalText={originalText[1]}
+            />
+            <Question
+              question="Are you also Short of Breath?"
+              filename={filename[2]}
+              phonetic={phonetic && phonetic[2]}
+              language={language}
+              filetype={filetype}
+              originalText={originalText[2]}
+            />
+            <Question
+              question="Is the pain worse when you take a deep breath?"
+              filename={filename[3]}
+              phonetic={phonetic && phonetic[3]}
+              language={language}
+              filetype={filetype}
+              originalText={originalText[3]}
+            />
+            <Question
+              question="Are you Nauseated?"
+              filename={filename[4]}
+              phonetic={phonetic && phonetic[4]}
+              language={language}
+              filetype={filetype}
+              originalText={originalText[4]}
+            />
+            <Question
+              question="Does the pain radiate to your back?"
+              filename={filename[5]}
+              phonetic={phonetic && phonetic[5]}
+              language={language}
+              filetype={filetype}
+              originalText={originalText[5]}
+            />
+            <Question
+              question="Are you Dizzy?"
+              filename={filename[6]}
+              phonetic={phonetic && phonetic[6]}
+              language={language}
+              filetype={filetype}
+              originalText={originalText[6]}
+            />
+          </View>
+        )}
       </ScrollView>
     </View>
   );

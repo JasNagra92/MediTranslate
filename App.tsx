@@ -7,11 +7,10 @@ import Launch from './src/components/Launch';
 import AssessmentSelect from './src/components/AssessmentSelect';
 import ChestPainQuestions from './src/components/ChestPainQuestions';
 import AbdoPainQuestions from './src/components/AbdoPainQuestions';
-import MandarinChestPainQuestions from './src/components/MandarinChestPainQuestions';
-import MandarinAbdoPainQuestions from './src/components/MandarinAbdoPainQuestions';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import FullScreen from './src/components/FullScreen';
 import SuggestQuestion from './src/components/SuggestQuestion';
+import {punjabi, mandarin} from './src/components/languageHelper';
 
 const Drawer = createDrawerNavigator();
 
@@ -41,22 +40,44 @@ const App = () => {
         <Drawer.Screen
           name="Punjabi Chest pain"
           component={ChestPainQuestions}
-          initialParams={{language: 'Punjabi'}}
+          initialParams={{
+            language: 'Punjabi',
+            filetype: punjabi.filetype,
+            filename: punjabi.filename,
+            originalText: punjabi.originalText,
+            phonetic: punjabi.phonetic,
+          }}
         />
         <Drawer.Screen
           name="Punjabi Abdo pain"
           component={AbdoPainQuestions}
-          initialParams={{language: 'Punjabi'}}
+          initialParams={{
+            language: 'Punjabi',
+            filetype: punjabi.filetype,
+            filename: punjabi.filename,
+            phonetic: punjabi.phonetic,
+            originalText: punjabi.originalText,
+          }}
         />
         <Drawer.Screen
           name="Mandarin Chest pain"
-          component={MandarinChestPainQuestions}
-          initialParams={{language: 'Mandarin'}}
+          component={ChestPainQuestions}
+          initialParams={{
+            language: 'Mandarin',
+            filetype: mandarin.filetype,
+            filename: mandarin.filename,
+            originalText: mandarin.originalText,
+          }}
         />
         <Drawer.Screen
           name="Mandarin Abdo pain"
-          component={MandarinAbdoPainQuestions}
-          initialParams={{language: 'Mandarin'}}
+          component={AbdoPainQuestions}
+          initialParams={{
+            language: 'Mandarin',
+            filetype: mandarin.filetype,
+            filename: mandarin.filename,
+            originalText: mandarin.originalText,
+          }}
         />
         <Drawer.Screen
           name="Punjabi"
