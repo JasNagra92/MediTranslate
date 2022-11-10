@@ -10,9 +10,20 @@ import AbdoPainQuestions from './src/components/AbdoPainQuestions';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import FullScreen from './src/components/FullScreen';
 import SuggestQuestion from './src/components/SuggestQuestion';
-import {punjabi, mandarin} from './src/components/languageHelper';
+import {
+  punjabiCP,
+  punjabiAP,
+  mandarinCP,
+  mandarinAP,
+  hindiCP,
+  hindiAP,
+  arabicCP,
+  arabicAP,
+} from './src/components/LanguageHelper2';
 
-const Drawer = createDrawerNavigator();
+import {RootStackParamList} from './src/components/Types';
+
+const Drawer = createDrawerNavigator<RootStackParamList>();
 
 const App = () => {
   return (
@@ -38,45 +49,67 @@ const App = () => {
         })}>
         <Drawer.Screen name="Home" component={Launch} />
         <Drawer.Screen
-          name="Punjabi Chest pain"
+          name="Punjabi Chest Pain"
           component={ChestPainQuestions}
           initialParams={{
             language: 'Punjabi',
-            filetype: punjabi.filetype,
-            filename: punjabi.filename,
-            originalText: punjabi.originalText,
-            phonetic: punjabi.phonetic,
+            questions: punjabiCP,
           }}
         />
         <Drawer.Screen
-          name="Punjabi Abdo pain"
+          name="Punjabi Abdo Pain"
           component={AbdoPainQuestions}
           initialParams={{
             language: 'Punjabi',
-            filetype: punjabi.filetype,
-            filename: punjabi.filename,
-            phonetic: punjabi.phonetic,
-            originalText: punjabi.originalText,
+            questions: punjabiAP,
           }}
         />
         <Drawer.Screen
-          name="Mandarin Chest pain"
+          name="Mandarin Chest Pain"
           component={ChestPainQuestions}
           initialParams={{
             language: 'Mandarin',
-            filetype: mandarin.filetype,
-            filename: mandarin.filename,
-            originalText: mandarin.originalText,
+            questions: mandarinCP,
           }}
         />
         <Drawer.Screen
-          name="Mandarin Abdo pain"
+          name="Mandarin Abdo Pain"
           component={AbdoPainQuestions}
           initialParams={{
             language: 'Mandarin',
-            filetype: mandarin.filetype,
-            filename: mandarin.filename,
-            originalText: mandarin.originalText,
+            questions: mandarinAP,
+          }}
+        />
+        <Drawer.Screen
+          name="Hindi Chest Pain"
+          component={ChestPainQuestions}
+          initialParams={{
+            language: 'Hindi',
+            questions: hindiCP,
+          }}
+        />
+        <Drawer.Screen
+          name="Hindi Abdo Pain"
+          component={AbdoPainQuestions}
+          initialParams={{
+            language: 'Hindi',
+            questions: hindiAP,
+          }}
+        />
+        <Drawer.Screen
+          name="Arabic Chest Pain"
+          component={ChestPainQuestions}
+          initialParams={{
+            language: 'Arabic',
+            questions: arabicCP,
+          }}
+        />
+        <Drawer.Screen
+          name="Arabic Abdo Pain"
+          component={AbdoPainQuestions}
+          initialParams={{
+            language: 'Arabic',
+            questions: arabicAP,
           }}
         />
         <Drawer.Screen
@@ -86,6 +119,20 @@ const App = () => {
         />
         <Drawer.Screen
           name="Mandarin"
+          component={AssessmentSelect}
+          options={{
+            drawerItemStyle: {display: 'none'},
+          }}
+        />
+        <Drawer.Screen
+          name="Hindi"
+          component={AssessmentSelect}
+          options={{
+            drawerItemStyle: {display: 'none'},
+          }}
+        />
+        <Drawer.Screen
+          name="Arabic"
           component={AssessmentSelect}
           options={{
             drawerItemStyle: {display: 'none'},

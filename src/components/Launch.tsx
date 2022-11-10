@@ -2,18 +2,19 @@ import React, {useState} from 'react';
 import {View, Image, Text, StyleSheet, TouchableOpacity} from 'react-native';
 import {Shadow} from 'react-native-shadow-2';
 import DropDownPicker from 'react-native-dropdown-picker';
-interface props {
-  navigation: {
-    navigate: (screen: string | null) => void;
-  };
-}
+import {RootStackParamList} from './Types';
+import {DrawerScreenProps} from '@react-navigation/drawer';
 
-const Launch: React.FC<props> = ({navigation}) => {
-  const [open, setOpen] = useState(false);
-  const [value, setValue] = useState(null);
-  const [items, setItems] = useState([
+type Props = DrawerScreenProps<RootStackParamList, 'Home'>;
+
+const Launch: React.FC<Props> = ({navigation}) => {
+  const [open, setOpen] = useState<boolean>(false);
+  const [value, setValue] = useState<string>('');
+  const [items, setItems] = useState<object[]>([
     {label: 'Punjabi', value: 'Punjabi'},
     {label: 'Mandarin', value: 'Mandarin'},
+    {label: 'Hindi', value: 'Hindi'},
+    {label: 'Arabic', value: 'Arabic'},
   ]);
 
   return (
@@ -37,7 +38,7 @@ const Launch: React.FC<props> = ({navigation}) => {
             <TouchableOpacity
               style={style.button}
               disabled={value ? false : true}
-              onPress={() => navigation.navigate(value)}>
+              onPress={() => navigation.navigate(value as any)}>
               <Text style={style.BtnText}>Continue</Text>
             </TouchableOpacity>
           </View>
