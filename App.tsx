@@ -19,7 +19,9 @@ import {
   hindiAP,
   arabicCP,
   arabicAP,
-} from './src/components/LanguageHelper2';
+  koreanCP,
+  koreanAP,
+} from './src/components/QuestionStorageModule';
 
 import {RootStackParamList} from './src/components/Types';
 
@@ -55,6 +57,9 @@ const App = () => {
             language: 'Punjabi',
             questions: punjabiCP,
           }}
+          options={{
+            drawerItemStyle: {display: 'none'},
+          }}
         />
         <Drawer.Screen
           name="Punjabi Abdo Pain"
@@ -62,6 +67,9 @@ const App = () => {
           initialParams={{
             language: 'Punjabi',
             questions: punjabiAP,
+          }}
+          options={{
+            drawerItemStyle: {display: 'none'},
           }}
         />
         <Drawer.Screen
@@ -71,6 +79,9 @@ const App = () => {
             language: 'Mandarin',
             questions: mandarinCP,
           }}
+          options={{
+            drawerItemStyle: {display: 'none'},
+          }}
         />
         <Drawer.Screen
           name="Mandarin Abdo Pain"
@@ -78,6 +89,9 @@ const App = () => {
           initialParams={{
             language: 'Mandarin',
             questions: mandarinAP,
+          }}
+          options={{
+            drawerItemStyle: {display: 'none'},
           }}
         />
         <Drawer.Screen
@@ -87,6 +101,9 @@ const App = () => {
             language: 'Hindi',
             questions: hindiCP,
           }}
+          options={{
+            drawerItemStyle: {display: 'none'},
+          }}
         />
         <Drawer.Screen
           name="Hindi Abdo Pain"
@@ -94,6 +111,9 @@ const App = () => {
           initialParams={{
             language: 'Hindi',
             questions: hindiAP,
+          }}
+          options={{
+            drawerItemStyle: {display: 'none'},
           }}
         />
         <Drawer.Screen
@@ -103,6 +123,9 @@ const App = () => {
             language: 'Arabic',
             questions: arabicCP,
           }}
+          options={{
+            drawerItemStyle: {display: 'none'},
+          }}
         />
         <Drawer.Screen
           name="Arabic Abdo Pain"
@@ -111,33 +134,36 @@ const App = () => {
             language: 'Arabic',
             questions: arabicAP,
           }}
-        />
-        <Drawer.Screen
-          name="Punjabi"
-          component={AssessmentSelect}
-          options={{drawerItemStyle: {display: 'none'}}}
-        />
-        <Drawer.Screen
-          name="Mandarin"
-          component={AssessmentSelect}
           options={{
             drawerItemStyle: {display: 'none'},
           }}
         />
         <Drawer.Screen
-          name="Hindi"
-          component={AssessmentSelect}
+          name="Korean Chest Pain"
+          component={ChestPainQuestions}
+          initialParams={{
+            language: 'Korean',
+            questions: koreanCP,
+          }}
           options={{
             drawerItemStyle: {display: 'none'},
           }}
         />
         <Drawer.Screen
-          name="Arabic"
-          component={AssessmentSelect}
+          name="Korean Abdo Pain"
+          component={AbdoPainQuestions}
+          initialParams={{
+            language: 'Korean',
+            questions: koreanAP,
+          }}
           options={{
             drawerItemStyle: {display: 'none'},
           }}
         />
+        <Drawer.Screen name="Punjabi" component={AssessmentSelect} />
+        <Drawer.Screen name="Mandarin" component={AssessmentSelect} />
+        <Drawer.Screen name="Hindi" component={AssessmentSelect} />
+        <Drawer.Screen name="Arabic" component={AssessmentSelect} />
         <Drawer.Screen
           name="FullScreen"
           component={FullScreen}

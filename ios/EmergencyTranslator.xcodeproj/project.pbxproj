@@ -55,36 +55,16 @@
 		8F0E0F01290790320021E8B9 /* q4cpm.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8F0E0EF8290790320021E8B9 /* q4cpm.wav */; };
 		8F0E0F02290790320021E8B9 /* q2cpm.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8F0E0EF9290790320021E8B9 /* q2cpm.wav */; };
 		8F0E0F03290790320021E8B9 /* q4apm.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8F0E0EFA290790320021E8B9 /* q4apm.wav */; };
-		8F62C90E291CAE2D00A443BD /* q4cpHindi.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8F62C904291CAE2B00A443BD /* q4cpHindi.wav */; };
-		8F62C90F291CAE2D00A443BD /* q6cpHindi.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8F62C905291CAE2C00A443BD /* q6cpHindi.wav */; };
-		8F62C910291CAE2D00A443BD /* q2apHindi.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8F62C906291CAE2C00A443BD /* q2apHindi.wav */; };
-		8F62C911291CAE2D00A443BD /* q7cpHindi.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8F62C907291CAE2C00A443BD /* q7cpHindi.wav */; };
-		8F62C912291CAE2D00A443BD /* q3apHindi.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8F62C908291CAE2C00A443BD /* q3apHindi.wav */; };
-		8F62C913291CAE2D00A443BD /* q1cpHindi.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8F62C909291CAE2C00A443BD /* q1cpHindi.wav */; };
-		8F62C914291CAE2D00A443BD /* q3cpHindi.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8F62C90A291CAE2C00A443BD /* q3cpHindi.wav */; };
-		8F62C915291CAE2D00A443BD /* q1apHindi.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8F62C90B291CAE2C00A443BD /* q1apHindi.wav */; };
-		8F62C916291CAE2D00A443BD /* q5cpHindi.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8F62C90C291CAE2D00A443BD /* q5cpHindi.wav */; };
-		8F62C917291CAE2D00A443BD /* q2cpHindi.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8F62C90D291CAE2D00A443BD /* q2cpHindi.wav */; };
-		8F62C922291CBDDF00A443BD /* q4cpArabic.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8F62C918291CBDDC00A443BD /* q4cpArabic.wav */; };
-		8F62C923291CBDDF00A443BD /* q2cpArabic.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8F62C919291CBDDC00A443BD /* q2cpArabic.wav */; };
-		8F62C924291CBDDF00A443BD /* q5cpArabic.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8F62C91A291CBDDD00A443BD /* q5cpArabic.wav */; };
-		8F62C925291CBDDF00A443BD /* q2apArabic.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8F62C91B291CBDDD00A443BD /* q2apArabic.wav */; };
-		8F62C926291CBDDF00A443BD /* q6cpArabic.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8F62C91C291CBDDD00A443BD /* q6cpArabic.wav */; };
-		8F62C927291CBDDF00A443BD /* q3cpArabic.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8F62C91D291CBDDD00A443BD /* q3cpArabic.wav */; };
-		8F62C928291CBDDF00A443BD /* q1cpArabic.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8F62C91E291CBDDD00A443BD /* q1cpArabic.wav */; };
-		8F62C929291CBDDF00A443BD /* q3apArabic.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8F62C91F291CBDDD00A443BD /* q3apArabic.wav */; };
-		8F62C92A291CBDDF00A443BD /* q7cpArabic.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8F62C920291CBDDE00A443BD /* q7cpArabic.wav */; };
-		8F62C92B291CBDDF00A443BD /* q1apArabic.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8F62C921291CBDDE00A443BD /* q1apArabic.wav */; };
-		8F62C936291CC02000A443BD /* q5cpKorean.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8F62C92C291CC01E00A443BD /* q5cpKorean.mp3 */; };
-		8F62C937291CC02000A443BD /* q3cpKorean.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8F62C92D291CC01E00A443BD /* q3cpKorean.mp3 */; };
-		8F62C938291CC02000A443BD /* q3apKorean.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8F62C92E291CC01E00A443BD /* q3apKorean.mp3 */; };
-		8F62C939291CC02000A443BD /* q1apKorean.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8F62C92F291CC01F00A443BD /* q1apKorean.mp3 */; };
-		8F62C93A291CC02000A443BD /* q1cpKorean.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8F62C930291CC01F00A443BD /* q1cpKorean.mp3 */; };
-		8F62C93B291CC02000A443BD /* q2cpKorean.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8F62C931291CC01F00A443BD /* q2cpKorean.mp3 */; };
-		8F62C93C291CC02000A443BD /* q7cpKorean.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8F62C932291CC01F00A443BD /* q7cpKorean.mp3 */; };
-		8F62C93D291CC02000A443BD /* q2apKorean.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8F62C933291CC01F00A443BD /* q2apKorean.mp3 */; };
-		8F62C93E291CC02000A443BD /* q4cpKorean.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8F62C934291CC01F00A443BD /* q4cpKorean.mp3 */; };
-		8F62C93F291CC02000A443BD /* q6cpKorean.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8F62C935291CC02000A443BD /* q6cpKorean.mp3 */; };
+		8F62C94A291CDF8900A443BD /* q7cpkorean.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8F62C940291CDF8700A443BD /* q7cpkorean.mp3 */; };
+		8F62C94B291CDF8900A443BD /* q6cphindi.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8F62C941291CDF8700A443BD /* q6cphindi.wav */; };
+		8F62C94C291CDF8900A443BD /* q4cpkorean.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8F62C942291CDF8700A443BD /* q4cpkorean.mp3 */; };
+		8F62C94D291CDF8900A443BD /* q5cparabic.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8F62C943291CDF8700A443BD /* q5cparabic.wav */; };
+		8F62C94E291CDF8900A443BD /* q5cpkorean.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8F62C944291CDF8800A443BD /* q5cpkorean.mp3 */; };
+		8F62C94F291CDF8900A443BD /* q6cpkorean.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8F62C945291CDF8800A443BD /* q6cpkorean.mp3 */; };
+		8F62C950291CDF8900A443BD /* q7cparabic.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8F62C946291CDF8800A443BD /* q7cparabic.wav */; };
+		8F62C951291CDF8900A443BD /* q7cphindi.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8F62C947291CDF8800A443BD /* q7cphindi.wav */; };
+		8F62C952291CDF8900A443BD /* q5cphindi.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8F62C948291CDF8800A443BD /* q5cphindi.wav */; };
+		8F62C953291CDF8900A443BD /* q6cparabic.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8F62C949291CDF8800A443BD /* q6cparabic.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -154,36 +134,16 @@
 		8F0E0EF8290790320021E8B9 /* q4cpm.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = q4cpm.wav; path = ../android/app/src/main/res/raw/q4cpm.wav; sourceTree = "<group>"; };
 		8F0E0EF9290790320021E8B9 /* q2cpm.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = q2cpm.wav; path = ../android/app/src/main/res/raw/q2cpm.wav; sourceTree = "<group>"; };
 		8F0E0EFA290790320021E8B9 /* q4apm.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = q4apm.wav; path = ../android/app/src/main/res/raw/q4apm.wav; sourceTree = "<group>"; };
-		8F62C904291CAE2B00A443BD /* q4cpHindi.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = q4cpHindi.wav; path = ../android/app/src/main/res/raw/q4cpHindi.wav; sourceTree = "<group>"; };
-		8F62C905291CAE2C00A443BD /* q6cpHindi.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = q6cpHindi.wav; path = ../android/app/src/main/res/raw/q6cpHindi.wav; sourceTree = "<group>"; };
-		8F62C906291CAE2C00A443BD /* q2apHindi.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = q2apHindi.wav; path = ../android/app/src/main/res/raw/q2apHindi.wav; sourceTree = "<group>"; };
-		8F62C907291CAE2C00A443BD /* q7cpHindi.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = q7cpHindi.wav; path = ../android/app/src/main/res/raw/q7cpHindi.wav; sourceTree = "<group>"; };
-		8F62C908291CAE2C00A443BD /* q3apHindi.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = q3apHindi.wav; path = ../android/app/src/main/res/raw/q3apHindi.wav; sourceTree = "<group>"; };
-		8F62C909291CAE2C00A443BD /* q1cpHindi.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = q1cpHindi.wav; path = ../android/app/src/main/res/raw/q1cpHindi.wav; sourceTree = "<group>"; };
-		8F62C90A291CAE2C00A443BD /* q3cpHindi.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = q3cpHindi.wav; path = ../android/app/src/main/res/raw/q3cpHindi.wav; sourceTree = "<group>"; };
-		8F62C90B291CAE2C00A443BD /* q1apHindi.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = q1apHindi.wav; path = ../android/app/src/main/res/raw/q1apHindi.wav; sourceTree = "<group>"; };
-		8F62C90C291CAE2D00A443BD /* q5cpHindi.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = q5cpHindi.wav; path = ../android/app/src/main/res/raw/q5cpHindi.wav; sourceTree = "<group>"; };
-		8F62C90D291CAE2D00A443BD /* q2cpHindi.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = q2cpHindi.wav; path = ../android/app/src/main/res/raw/q2cpHindi.wav; sourceTree = "<group>"; };
-		8F62C918291CBDDC00A443BD /* q4cpArabic.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = q4cpArabic.wav; path = ../android/app/src/main/res/raw/q4cpArabic.wav; sourceTree = "<group>"; };
-		8F62C919291CBDDC00A443BD /* q2cpArabic.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = q2cpArabic.wav; path = ../android/app/src/main/res/raw/q2cpArabic.wav; sourceTree = "<group>"; };
-		8F62C91A291CBDDD00A443BD /* q5cpArabic.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = q5cpArabic.wav; path = ../android/app/src/main/res/raw/q5cpArabic.wav; sourceTree = "<group>"; };
-		8F62C91B291CBDDD00A443BD /* q2apArabic.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = q2apArabic.wav; path = ../android/app/src/main/res/raw/q2apArabic.wav; sourceTree = "<group>"; };
-		8F62C91C291CBDDD00A443BD /* q6cpArabic.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = q6cpArabic.wav; path = ../android/app/src/main/res/raw/q6cpArabic.wav; sourceTree = "<group>"; };
-		8F62C91D291CBDDD00A443BD /* q3cpArabic.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = q3cpArabic.wav; path = ../android/app/src/main/res/raw/q3cpArabic.wav; sourceTree = "<group>"; };
-		8F62C91E291CBDDD00A443BD /* q1cpArabic.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = q1cpArabic.wav; path = ../android/app/src/main/res/raw/q1cpArabic.wav; sourceTree = "<group>"; };
-		8F62C91F291CBDDD00A443BD /* q3apArabic.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = q3apArabic.wav; path = ../android/app/src/main/res/raw/q3apArabic.wav; sourceTree = "<group>"; };
-		8F62C920291CBDDE00A443BD /* q7cpArabic.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = q7cpArabic.wav; path = ../android/app/src/main/res/raw/q7cpArabic.wav; sourceTree = "<group>"; };
-		8F62C921291CBDDE00A443BD /* q1apArabic.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = q1apArabic.wav; path = ../android/app/src/main/res/raw/q1apArabic.wav; sourceTree = "<group>"; };
-		8F62C92C291CC01E00A443BD /* q5cpKorean.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = q5cpKorean.mp3; path = ../android/app/src/main/res/raw/q5cpKorean.mp3; sourceTree = "<group>"; };
-		8F62C92D291CC01E00A443BD /* q3cpKorean.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = q3cpKorean.mp3; path = ../android/app/src/main/res/raw/q3cpKorean.mp3; sourceTree = "<group>"; };
-		8F62C92E291CC01E00A443BD /* q3apKorean.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = q3apKorean.mp3; path = ../android/app/src/main/res/raw/q3apKorean.mp3; sourceTree = "<group>"; };
-		8F62C92F291CC01F00A443BD /* q1apKorean.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = q1apKorean.mp3; path = ../android/app/src/main/res/raw/q1apKorean.mp3; sourceTree = "<group>"; };
-		8F62C930291CC01F00A443BD /* q1cpKorean.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = q1cpKorean.mp3; path = ../android/app/src/main/res/raw/q1cpKorean.mp3; sourceTree = "<group>"; };
-		8F62C931291CC01F00A443BD /* q2cpKorean.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = q2cpKorean.mp3; path = ../android/app/src/main/res/raw/q2cpKorean.mp3; sourceTree = "<group>"; };
-		8F62C932291CC01F00A443BD /* q7cpKorean.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = q7cpKorean.mp3; path = ../android/app/src/main/res/raw/q7cpKorean.mp3; sourceTree = "<group>"; };
-		8F62C933291CC01F00A443BD /* q2apKorean.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = q2apKorean.mp3; path = ../android/app/src/main/res/raw/q2apKorean.mp3; sourceTree = "<group>"; };
-		8F62C934291CC01F00A443BD /* q4cpKorean.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = q4cpKorean.mp3; path = ../android/app/src/main/res/raw/q4cpKorean.mp3; sourceTree = "<group>"; };
-		8F62C935291CC02000A443BD /* q6cpKorean.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = q6cpKorean.mp3; path = ../android/app/src/main/res/raw/q6cpKorean.mp3; sourceTree = "<group>"; };
+		8F62C940291CDF8700A443BD /* q7cpkorean.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = q7cpkorean.mp3; path = ../android/app/src/main/res/raw/q7cpkorean.mp3; sourceTree = "<group>"; };
+		8F62C941291CDF8700A443BD /* q6cphindi.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = q6cphindi.wav; path = ../android/app/src/main/res/raw/q6cphindi.wav; sourceTree = "<group>"; };
+		8F62C942291CDF8700A443BD /* q4cpkorean.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = q4cpkorean.mp3; path = ../android/app/src/main/res/raw/q4cpkorean.mp3; sourceTree = "<group>"; };
+		8F62C943291CDF8700A443BD /* q5cparabic.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = q5cparabic.wav; path = ../android/app/src/main/res/raw/q5cparabic.wav; sourceTree = "<group>"; };
+		8F62C944291CDF8800A443BD /* q5cpkorean.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = q5cpkorean.mp3; path = ../android/app/src/main/res/raw/q5cpkorean.mp3; sourceTree = "<group>"; };
+		8F62C945291CDF8800A443BD /* q6cpkorean.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = q6cpkorean.mp3; path = ../android/app/src/main/res/raw/q6cpkorean.mp3; sourceTree = "<group>"; };
+		8F62C946291CDF8800A443BD /* q7cparabic.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = q7cparabic.wav; path = ../android/app/src/main/res/raw/q7cparabic.wav; sourceTree = "<group>"; };
+		8F62C947291CDF8800A443BD /* q7cphindi.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = q7cphindi.wav; path = ../android/app/src/main/res/raw/q7cphindi.wav; sourceTree = "<group>"; };
+		8F62C948291CDF8800A443BD /* q5cphindi.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = q5cphindi.wav; path = ../android/app/src/main/res/raw/q5cphindi.wav; sourceTree = "<group>"; };
+		8F62C949291CDF8800A443BD /* q6cparabic.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = q6cparabic.wav; path = ../android/app/src/main/res/raw/q6cparabic.wav; sourceTree = "<group>"; };
 		8FD41D54394647C78BD5EC94 /* Poppins-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Black.ttf"; path = "../assets/fonts/Poppins-Black.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -320,36 +280,16 @@
 		8F0E0F052907904F0021E8B9 /* sounds */ = {
 			isa = PBXGroup;
 			children = (
-				8F62C92F291CC01F00A443BD /* q1apKorean.mp3 */,
-				8F62C930291CC01F00A443BD /* q1cpKorean.mp3 */,
-				8F62C933291CC01F00A443BD /* q2apKorean.mp3 */,
-				8F62C931291CC01F00A443BD /* q2cpKorean.mp3 */,
-				8F62C92E291CC01E00A443BD /* q3apKorean.mp3 */,
-				8F62C92D291CC01E00A443BD /* q3cpKorean.mp3 */,
-				8F62C934291CC01F00A443BD /* q4cpKorean.mp3 */,
-				8F62C92C291CC01E00A443BD /* q5cpKorean.mp3 */,
-				8F62C935291CC02000A443BD /* q6cpKorean.mp3 */,
-				8F62C932291CC01F00A443BD /* q7cpKorean.mp3 */,
-				8F62C921291CBDDE00A443BD /* q1apArabic.wav */,
-				8F62C91E291CBDDD00A443BD /* q1cpArabic.wav */,
-				8F62C91B291CBDDD00A443BD /* q2apArabic.wav */,
-				8F62C919291CBDDC00A443BD /* q2cpArabic.wav */,
-				8F62C91F291CBDDD00A443BD /* q3apArabic.wav */,
-				8F62C91D291CBDDD00A443BD /* q3cpArabic.wav */,
-				8F62C918291CBDDC00A443BD /* q4cpArabic.wav */,
-				8F62C91A291CBDDD00A443BD /* q5cpArabic.wav */,
-				8F62C91C291CBDDD00A443BD /* q6cpArabic.wav */,
-				8F62C920291CBDDE00A443BD /* q7cpArabic.wav */,
-				8F62C90B291CAE2C00A443BD /* q1apHindi.wav */,
-				8F62C909291CAE2C00A443BD /* q1cpHindi.wav */,
-				8F62C906291CAE2C00A443BD /* q2apHindi.wav */,
-				8F62C90D291CAE2D00A443BD /* q2cpHindi.wav */,
-				8F62C908291CAE2C00A443BD /* q3apHindi.wav */,
-				8F62C90A291CAE2C00A443BD /* q3cpHindi.wav */,
-				8F62C904291CAE2B00A443BD /* q4cpHindi.wav */,
-				8F62C90C291CAE2D00A443BD /* q5cpHindi.wav */,
-				8F62C905291CAE2C00A443BD /* q6cpHindi.wav */,
-				8F62C907291CAE2C00A443BD /* q7cpHindi.wav */,
+				8F62C942291CDF8700A443BD /* q4cpkorean.mp3 */,
+				8F62C943291CDF8700A443BD /* q5cparabic.wav */,
+				8F62C948291CDF8800A443BD /* q5cphindi.wav */,
+				8F62C944291CDF8800A443BD /* q5cpkorean.mp3 */,
+				8F62C949291CDF8800A443BD /* q6cparabic.wav */,
+				8F62C941291CDF8700A443BD /* q6cphindi.wav */,
+				8F62C945291CDF8800A443BD /* q6cpkorean.mp3 */,
+				8F62C946291CDF8800A443BD /* q7cparabic.wav */,
+				8F62C947291CDF8800A443BD /* q7cphindi.wav */,
+				8F62C940291CDF8700A443BD /* q7cpkorean.mp3 */,
 				8F0E0EEE29078DC00021E8B9 /* q1cpm.wav */,
 				8F0E0EC02905B02E0021E8B9 /* q5cp.mp3 */,
 				8F0E0EC62905B0C50021E8B9 /* q1ap.mp3 */,
@@ -507,71 +447,51 @@
 				8F0E0F02290790320021E8B9 /* q2cpm.wav in Resources */,
 				8F0E0EEB2905D81A0021E8B9 /* EvilIcons.ttf in Resources */,
 				8F0E0EFE290790320021E8B9 /* q3cpm.wav in Resources */,
-				8F62C92B291CBDDF00A443BD /* q1apArabic.wav in Resources */,
-				8F62C911291CAE2D00A443BD /* q7cpHindi.wav in Resources */,
 				8F0E0EB828FFB14E0021E8B9 /* Poppins-Regular.ttf in Resources */,
+				8F62C94C291CDF8900A443BD /* q4cpkorean.mp3 in Resources */,
 				8F0E0EE32905D81A0021E8B9 /* MaterialCommunityIcons.ttf in Resources */,
-				8F62C926291CBDDF00A443BD /* q6cpArabic.wav in Resources */,
 				8F0E0F01290790320021E8B9 /* q4cpm.wav in Resources */,
 				8F0E0EE82905D81A0021E8B9 /* FontAwesome5_Regular.ttf in Resources */,
+				8F62C952291CDF8900A443BD /* q5cphindi.wav in Resources */,
 				8F0E0EE62905D81A0021E8B9 /* Ionicons.ttf in Resources */,
 				8F0E0EC22905B02E0021E8B9 /* q4cp.mp3 in Resources */,
-				8F62C90E291CAE2D00A443BD /* q4cpHindi.wav in Resources */,
-				8F62C927291CBDDF00A443BD /* q3cpArabic.wav in Resources */,
 				8F0E0EFF290790320021E8B9 /* q3apm.wav in Resources */,
-				8F62C923291CBDDF00A443BD /* q2cpArabic.wav in Resources */,
-				8F62C92A291CBDDF00A443BD /* q7cpArabic.wav in Resources */,
-				8F62C922291CBDDF00A443BD /* q4cpArabic.wav in Resources */,
-				8F62C914291CAE2D00A443BD /* q3cpHindi.wav in Resources */,
-				8F62C917291CAE2D00A443BD /* q2cpHindi.wav in Resources */,
-				8F62C912291CAE2D00A443BD /* q3apHindi.wav in Resources */,
 				8F0E0EB628FFA5230021E8B9 /* logo.png in Resources */,
+				8F62C953291CDF8900A443BD /* q6cparabic.wav in Resources */,
 				8F0E0EEF29078DC00021E8B9 /* q1cpm.wav in Resources */,
-				8F62C93F291CC02000A443BD /* q6cpKorean.mp3 in Resources */,
 				8F0E0ECA2905B0C50021E8B9 /* q3ap.mp3 in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
-				8F62C93A291CC02000A443BD /* q1cpKorean.mp3 in Resources */,
 				8F0E0EE52905D81A0021E8B9 /* Foundation.ttf in Resources */,
+				8F62C94A291CDF8900A443BD /* q7cpkorean.mp3 in Resources */,
+				8F62C951291CDF8900A443BD /* q7cphindi.wav in Resources */,
 				8F0E0EDF2905D81A0021E8B9 /* Octicons.ttf in Resources */,
 				8F0E0EE12905D81A0021E8B9 /* Entypo.ttf in Resources */,
 				8F0E0EE72905D81A0021E8B9 /* FontAwesome5_Solid.ttf in Resources */,
 				8F0E0EC32905B02E0021E8B9 /* q3cp.mp3 in Resources */,
 				8F0E0EFD290790320021E8B9 /* q5cpm.wav in Resources */,
-				8F62C910291CAE2D00A443BD /* q2apHindi.wav in Resources */,
 				8F0E0EC92905B0C50021E8B9 /* q1ap.mp3 in Resources */,
-				8F62C938291CC02000A443BD /* q3apKorean.mp3 in Resources */,
-				8F62C928291CBDDF00A443BD /* q1cpArabic.wav in Resources */,
+				8F62C950291CDF8900A443BD /* q7cparabic.wav in Resources */,
 				8F0E0EFB290790320021E8B9 /* q6cpm.wav in Resources */,
 				8F0E0EE22905D81A0021E8B9 /* FontAwesome5_Brands.ttf in Resources */,
 				8F0E0EE02905D81A0021E8B9 /* Feather.ttf in Resources */,
-				8F62C93D291CC02000A443BD /* q2apKorean.mp3 in Resources */,
 				8F0E0EEC2905D81A0021E8B9 /* SimpleLineIcons.ttf in Resources */,
-				8F62C937291CC02000A443BD /* q3cpKorean.mp3 in Resources */,
 				8F0E0EBC2905AEBF0021E8B9 /* q2cp.mp3 in Resources */,
-				8F62C913291CAE2D00A443BD /* q1cpHindi.wav in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				8F0E0EC12905B02E0021E8B9 /* q6cp.mp3 in Resources */,
+				8F62C94F291CDF8900A443BD /* q6cpkorean.mp3 in Resources */,
+				8F62C94B291CDF8900A443BD /* q6cphindi.wav in Resources */,
 				8F0E0EC82905B0C50021E8B9 /* q4ap.mp3 in Resources */,
-				8F62C915291CAE2D00A443BD /* q1apHindi.wav in Resources */,
-				8F62C929291CBDDF00A443BD /* q3apArabic.wav in Resources */,
 				8F0E0F00290790320021E8B9 /* q1apm.wav in Resources */,
 				8F0E0EEA2905D81A0021E8B9 /* Zocial.ttf in Resources */,
-				8F62C924291CBDDF00A443BD /* q5cpArabic.wav in Resources */,
-				8F62C916291CAE2D00A443BD /* q5cpHindi.wav in Resources */,
+				8F62C94D291CDF8900A443BD /* q5cparabic.wav in Resources */,
 				8F0E0EFC290790320021E8B9 /* q7cpm.wav in Resources */,
-				8F62C90F291CAE2D00A443BD /* q6cpHindi.wav in Resources */,
-				8F62C925291CBDDF00A443BD /* q2apArabic.wav in Resources */,
 				8F0E0ECC2905B10D0021E8B9 /* q7cp.mp3 in Resources */,
-				8F62C939291CC02000A443BD /* q1apKorean.mp3 in Resources */,
-				8F62C936291CC02000A443BD /* q5cpKorean.mp3 in Resources */,
-				8F62C93B291CC02000A443BD /* q2cpKorean.mp3 in Resources */,
 				8F0E0EBA2905ADA90021E8B9 /* test.mp3 in Resources */,
 				8F0E0EED2905D81A0021E8B9 /* MaterialIcons.ttf in Resources */,
+				8F62C94E291CDF8900A443BD /* q5cpkorean.mp3 in Resources */,
 				4330FE6367A54E569F351498 /* Poppins-Black.ttf in Resources */,
 				8F0E0EE92905D81A0021E8B9 /* FontAwesome.ttf in Resources */,
-				8F62C93C291CC02000A443BD /* q7cpKorean.mp3 in Resources */,
 				8F0E0EDE2905D81A0021E8B9 /* Fontisto.ttf in Resources */,
-				8F62C93E291CC02000A443BD /* q4cpKorean.mp3 in Resources */,
 				8F0E0EE42905D81A0021E8B9 /* AntDesign.ttf in Resources */,
 				8F0E0F03290790320021E8B9 /* q4apm.wav in Resources */,
 				8F0E0EC42905B02E0021E8B9 /* q5cp.mp3 in Resources */,
@@ -822,7 +742,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 326788944Z;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = EmergencyTranslator/Info.plist;
@@ -830,6 +750,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -850,13 +771,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 326788944Z;
 				INFOPLIST_FILE = EmergencyTranslator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",

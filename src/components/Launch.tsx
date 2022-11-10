@@ -15,6 +15,7 @@ const Launch: React.FC<Props> = ({navigation}) => {
     {label: 'Mandarin', value: 'Mandarin'},
     {label: 'Hindi', value: 'Hindi'},
     {label: 'Arabic', value: 'Arabic'},
+    {label: 'Korean', value: 'Korean'},
   ]);
 
   return (

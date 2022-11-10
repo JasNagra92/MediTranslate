@@ -32,8 +32,18 @@ export type RootStackParamList = {
     language: string;
     questions: Language;
   };
+  'Korean Chest Pain': {
+    language: string;
+    questions: Language;
+  };
+  'Korean Abdo Pain': {
+    language: string;
+    questions: Language;
+  };
   Punjabi: undefined;
   Mandarin: undefined;
+  Korean: undefined;
+  Arabic: undefined;
   Hindi: undefined;
   FullScreen: undefined;
   'Suggest A Question': undefined;
