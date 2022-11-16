@@ -164,6 +164,7 @@ const App = () => {
         <Drawer.Screen name="Mandarin" component={AssessmentSelect} />
         <Drawer.Screen name="Hindi" component={AssessmentSelect} />
         <Drawer.Screen name="Arabic" component={AssessmentSelect} />
+        <Drawer.Screen name="Korean" component={AssessmentSelect} />
         <Drawer.Screen
           name="FullScreen"
           component={FullScreen}
