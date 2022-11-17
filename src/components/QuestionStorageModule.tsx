@@ -205,7 +205,7 @@ export const koreanAP: Language = [
   {
     filetype: 'mp3',
     question: punjabiAP[1].question,
-    filename: 'q5cpmkorean',
+    filename: 'q5cpkorean',
     originalText: '메스꺼우세요?',
   },
   {
@@ -275,7 +275,7 @@ export const arabicAP: Language = [
   {
     filetype: 'wav',
     question: punjabiAP[1].question,
-    filename: 'q5cpmarabic',
+    filename: 'q5cparabic',
     originalText: 'هل تشعر بالغثيان',
   },
   {
