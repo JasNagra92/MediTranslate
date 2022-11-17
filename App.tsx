@@ -26,6 +26,8 @@ import {
 import {RootStackParamList} from './src/components/Types';
 
 const Drawer = createDrawerNavigator<RootStackParamList>();
+// using a drawer navigation style for this native application so creating a type
+// that will enable intellisense when using route parameters for the different screens
 
 const App = () => {
   return (
@@ -49,7 +51,12 @@ const App = () => {
           ),
           drawerPosition: 'right',
         })}>
+        {/* Navigator sets default screenOptions for each screen rendered to show the back button along
+        with the menu hamburger that will open the navigation drawer */}
+
         <Drawer.Screen name="Home" component={Launch} />
+        {/* seperate screen for each component that needs to be rendered */}
+
         <Drawer.Screen
           name="Punjabi Chest Pain"
           component={ChestPainQuestions}
@@ -61,6 +68,11 @@ const App = () => {
             drawerItemStyle: {display: 'none'},
           }}
         />
+        {/* each screen component will render either chest pain question component or abdo pain component
+        and use route parameters to check and render the correct language needed depending on the route. The questions
+        object that is passed as a route parameter will hold an array of question objects that are mapped in the component.
+        See QuestionStorageModule for details */}
+
         <Drawer.Screen
           name="Punjabi Abdo Pain"
           component={AbdoPainQuestions}
@@ -174,12 +186,15 @@ const App = () => {
             drawerItemStyle: {display: 'none'},
           }}
         />
+        {/* each screen needs to be listed in root App to enable navigation */}
+
         <Drawer.Screen
           name="Suggest A Question"
           component={SuggestQuestion}
           options={{
             drawerLabelStyle: style.suggestionLabel,
             drawerItemStyle: style.suggestionItem,
+            // styling to differentiate the suggest a question link from the assessment selection links
           }}
         />
       </Drawer.Navigator>

@@ -1,15 +1,7 @@
 import React from 'react';
-import {StyleSheet, ScrollView, View} from 'react-native';
+import {StyleSheet, ScrollView} from 'react-native';
 import Question from './Question';
-import {QuestionType} from './Types';
-interface Props {
-  route?: {
-    params: {
-      language: string;
-      questions: Array<QuestionType>;
-    };
-  };
-}
+import {Props} from './Types';
 
 const AbdoPainQuestions: React.FC<Props> = ({route}) => {
   const {language, questions} = route.params;

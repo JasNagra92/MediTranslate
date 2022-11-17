@@ -1,4 +1,5 @@
 import {Language} from './Types';
+// each array of questions uses the Language type to enable intellisense
 
 export const punjabiCP: Language = [
   {
@@ -51,6 +52,10 @@ export const punjabiCP: Language = [
     phonetic: 'twan-nuu Chak-rr awn-dah-ya',
   },
 ];
+// each object contains the information that needs to be rendered for each individual question card
+// storing and exporting each language as a seperate array allows the questions and filenames to be
+// entered in only one location and then rendered in either the chest pain or abdo pain components
+
 export const punjabiAP: Language = [
   {
     filetype: 'mp3',
