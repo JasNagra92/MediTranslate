@@ -8,10 +8,10 @@ import {
 } from 'react-native';
 import email from 'react-native-email';
 
-const SuggestQuestion = () => {
+const SuggestQuestion: React.FC = () => {
   const [question, setQuestion] = useState<string>('');
 
-  const handleEmail = () => {
+  const handleEmail: () => void = () => {
     const to = ['MediTranslateQuestions@outlook.com'];
     email(to, {
       subject: 'Question Suggestion',

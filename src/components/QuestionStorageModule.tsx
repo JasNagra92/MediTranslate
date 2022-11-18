@@ -336,7 +336,7 @@ export const hindiCP: Language = [
   {
     question: 'Are you Dizzy?',
     filetype: 'wav',
-    filename: 'q7cpHindi',
+    filename: 'q7cphindi',
     originalText: 'क्या आपको चक्कर आ रहे हैं?',
   },
 ];
